@@ -2,6 +2,8 @@
   "name": "AR_Client",
   "version": "1.0.0",
   "description": "AR_Client",
+  "optional": "Client for townRPG",
+  "repository" : "none",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js 'test/**/*.@(js|jsx)'",
@@ -19,12 +21,15 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "babel-eslint": "^6.1.2",
     "babel-loader": "^6.2.5",
     "babel-preset-es2015": "^6.14.0",
     "babel-preset-react": "^6.11.1",
     "chai": "^3.5.0",
     "chai-immutable": "^1.6.0",
     "eslint": "^3.3.1",
+    "eslint-loader": "^1.5.0",
+    "eslint-plugin-react": "^6.1.2",
     "jsdom": "^9.4.2",
     "mocha": "^3.0.2",
     "react-addons-test-utils": "^15.3.1",
@@ -33,6 +38,7 @@
     "webpack-dev-server": "^1.15.0"
   },
   "dependencies": {
+    "bootstrap-loader": "^1.2.0-beta.1",
     "immutable": "^3.8.1",
     "react": "^15.3.1",
     "react-dom": "^15.3.1"

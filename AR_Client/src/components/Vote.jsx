@@ -9,7 +9,7 @@ export default React.createClass({
 			hasVoted='',
 		}=this.props;
 		console.log(this.props);
-		function hasVotedFor(entry){return hasVoted===entry};
+		function hasVotedFor(entry){return hasVoted===entry}
 		return(
 			<div>
 				{pair.map(entry=>
@@ -18,7 +18,7 @@ export default React.createClass({
 					disabled={hasVotedFor(entry)?true:false}
 					onClick={()=>vote(entry)}>
 						<h1>{entry}</h1>
-					{hasVotedFor(entry)?<div className="label">Voted</div>:''}
+					{hasVotedFor(entry)?<div className='label'>Voted</div>:''}
 				</button>)}
 			</div>
 		)

@@ -7,13 +7,13 @@ class Voting extends Component{
 	render(){
 		const{
 			winner='',
-		}=this.props;
+		}=this.props
 		return(
-			<div className="voting">
-				{winner!=''?<Winner ref="winner" winner={winner}/>:<Vote {...this.props}/>}
+			<div className='voting'>
+				{winner!=''?<Winner ref='winner' winner={winner}/>:<Vote {...this.props}/>}
 			</div>
 		)
 	}
-};
+}
 
-export default Voting;
+export default Voting
