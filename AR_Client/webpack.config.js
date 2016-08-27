@@ -1,7 +1,7 @@
 //webpack.config.js
 var webpack = require('webpack');
 const path = require('path');
-//var ExtractTextPlugin = require("extract-text-webpack-plugin");
+var ExtractTextPlugin = require("extract-text-webpack-plugin");
 module.exports={
 	entry:[
 		'webpack-dev-server/client?http://localhost:8080',
@@ -21,16 +21,16 @@ module.exports={
 			{test: /\.scss$/,loaders: [ 'style', 'css', 'postcss', 'sass' ]},
 			{test: /\.(ttf|eot|svg|woff|woff2|png|jpg)$/,loader: 'file?name=[path][name].[ext]'},
 			{test: /bootstrap\/dist\/js\/umd\//, loader: 'imports?jQuery=jquery' },
-		//{test: /\.scss$/,loader: ExtractTextPlugin.extract(
-			//  'style',
-			  //'css?modules&importLoaders=2&localIdentName=[name]__[local]__[hash:base64:5]' +
-			 // '!sass' +
-			 // '!sass-resources'
-		//	),
-		//},
+		{test: /\.scss$/,loader: ExtractTextPlugin.extract(
+			  'style',
+			  'css?modules&importLoaders=2&localIdentName=[name]__[local]__[hash:base64:5]' +
+			  '!sass' +
+			  '!sass-resources'
+			),
+		},
 		]
 	},
-	//sassResources: './config/sass-resources.scss',
+	sassResources: './config/sass-resources.scss',
 	eslint: {configFile: './.eslintrc'},
 	resolve:{
 		extensions:['','.js','.jsx']
@@ -52,6 +52,6 @@ module.exports={
             jQuery: "jquery",
             _: "underscore"
         }),
-		//new ExtractTextPlugin("styles.css")
+		new ExtractTextPlugin("styles.css")
 	]
 }

@@ -11,7 +11,7 @@ export default React.createClass({
 		console.log(this.props);
 		function hasVotedFor(entry){return hasVoted===entry}
 		return(
-			<div>
+			<div className='btn'>
 				{pair.map(entry=>
 				<button
 					key={entry}
