@@ -1,6 +1,7 @@
 import {List, Map} from 'immutable'
 
 export const initialState=Map();
+
 function getWinner(vote){
 	if(!vote) return [];
 	const [a,b] =vote.get('pairs');

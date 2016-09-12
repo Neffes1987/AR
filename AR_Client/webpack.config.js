@@ -20,14 +20,14 @@ module.exports={
 			{test: /\.css$/,loaders: [ 'style', 'css', 'postcss' ]},
 			{test: /\.scss$/,loaders: [ 'style', 'css', 'postcss', 'sass' ]},
 			{test: /\.(ttf|eot|svg|woff|woff2|png|jpg)$/,loader: 'file?name=[path][name].[ext]'},
-			{test: /bootstrap\/dist\/js\/umd\//, loader: 'imports?jQuery=jquery' },
-		{test: /\.scss$/,loader: ExtractTextPlugin.extract(
+			{test: /\.scss$/,loader: ExtractTextPlugin.extract(
 			  'style',
 			  'css?modules&importLoaders=2&localIdentName=[name]__[local]__[hash:base64:5]' +
 			  '!sass' +
 			  '!sass-resources'
 			),
-		},
+			},
+			{ test: /bootstrap-sass\/assets\/javascripts\//, loader: 'imports?jQuery=jquery' }
 		]
 	},
 	sassResources: './config/sass-resources.scss',
@@ -52,6 +52,7 @@ module.exports={
             jQuery: "jquery",
             _: "underscore"
         }),
-		new ExtractTextPlugin("styles.css")
+		new ExtractTextPlugin("styles.css"),
+		new webpack.ProvidePlugin({"window.Tether": "tether"}),
 	]
 }
