@@ -1,15 +1,18 @@
-//Voting.jsx
+//Gallary.jsx
 import React from 'react'
+import Panel from './helpers/Panel'
+import {GallaryTitle} from '../vars'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
-import '../vars'
 
 export default React.createClass({
 	mixins:[PureRenderMixin],
 	render(){
 		//const{}=this.props
 		return(
-			<div className='voting'>
+			<div className='Gallary'>
+				<Panel title={GallaryTitle}>
 
+				</Panel>
 			</div>
 		)
 	}

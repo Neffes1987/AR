@@ -1,20 +1,14 @@
-//main.jsx
+//Wrapper.jsx
 import React from 'react'
-//import * as action_creator from '../action_creator'
-import Menu from './helpers/navigation'
-//import {connect} from 'react-redux'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 
-export const Main = React.createClass({
+export const Wrapper = React.createClass({
 	mixins:[PureRenderMixin],
 	render(){
-		//const{}=this.props
-		///console.log('main', this.props);
 		return(
-			<div className='row-area'>
-					<div className='left-side'><Menu {...this.props}/></div>
-					<div className='right-side'>{this.props.children}</div>
-				</div>
+			<div className='innrer'>
+				{this.props.children}
+			</div>
 		)
 	}
 })

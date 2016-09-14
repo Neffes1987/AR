@@ -1,0 +1,32 @@
+//endpoint.scss
+$active_bg: #286090;
+$active_font: #FFF;
+
+
+
+.row-area {
+	@extend .row;
+	margin-top:20px
+}
+.column {
+	@extend .col-md-4;
+}
+.content {
+	@extend .col-xs-6;
+	@extend .col-sm-6;
+}
+.right-side {
+	@extend .col-xs-8;
+	@extend .col-sm-8;
+}
+.left-side {
+	@extend .col-xs-3;
+	@extend .col-sm-3;
+}
+
+.active{
+	background-color:$active_bg;
+	color:$active_font;
+}
+
+.left-side li a:focus{@extend .active}

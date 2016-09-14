@@ -10,27 +10,28 @@ export default React.createClass({
 		const {bsClass} = this.props;
 		return(
 			<div className={'form-group '+bsClass}>
-				<h3 className='bg-primary'>Меню</h3>
 				<ul className='nav nav-pills nav-stacked'>
-					<li><Link to={'/connection settings'}  activeClassName='active'>Настройки соединения</Link></li>
+					<li><Link to={'/admin'} onlyActiveOnIndex activeClassName='active'>Главная</Link></li>
 
-					<li><Link to={'/main settings'}  activeClassName='active'>Основные настройки</Link></li>
+					<li><Link to={'/admin/Connection_settings'}  activeClassName='active'>Настройки соединения</Link></li>
 
-					<li><Link to={'/connection setting'}  activeClassName='active'>Галерея Unity 3D</Link></li>
+					<li><Link to={'/admin/Main_settings'}  activeClassName='active'>Основные настройки</Link></li>
 
-					<li><Link to={'/Actions'}  activeClassName='active'>Действия</Link></li>
+					<li><Link to={'/admin/Gallary'}  activeClassName='active'>Галерея Unity 3D</Link></li>
 
-					<li><Link to={'/Events'}  activeClassName='active'>События</Link></li>
+					<li><Link to={'/admin/Actions'}  activeClassName='active'>Действия</Link></li>
 
-					<li><Link to={'/connection setting'}  activeClassName='active'>Предметы и артефакты</Link></li>
+					<li><Link to={'/admin/Events'}  activeClassName='active'>События</Link></li>
 
-					<li><Link to={'/connection setting'}  activeClassName='active'>Характеристики и классы</Link></li>
+					<li><Link to={'/admin/Lut'}  activeClassName='active'>Предметы и артефакты</Link></li>
 
-					<li><Link to={'/connection setting'}  activeClassName='active'>База игроков</Link></li>
+					<li><Link to={'/admin/Characters'}  activeClassName='active'>Характеристики и классы</Link></li>
 
-					<li><Link to={'/connection setting'}  activeClassName='active'>Чат</Link></li>
+					<li><Link to={'/admin/BD'}  activeClassName='active'>База игроков</Link></li>
 
-					<li><Link to={'/connection setting'}  activeClassName='active'>Лог событий</Link></li>
+					<li><Link to={'/admin/Chat'}  activeClassName='active'>Чат</Link></li>
+
+					<li><Link to={'/admin/Log'}  activeClassName='active'>Лог событий</Link></li>
 				</ul>
 			</div>
 
