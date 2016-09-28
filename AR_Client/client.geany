@@ -18,17 +18,16 @@ detect_indent_width=false
 indent_mode=2
 
 [project]
-name=server
-base_path=/home/neffes/projects/AR/AR_Server
+name=Client
+base_path=/home/neffes/projects/AR/AR_Client
+description=
 
 [long line marker]
 long_line_behaviour=1
 long_line_column=72
 
 [files]
-current_page=1
-FILE_NAME_0=0;Javascript;0;EUTF-8;1;1;0;%2Fhome%2Fneffes%2Fprojects%2FAR%2FAR_Server%2Fserver%2Freducer.js;0;4
-FILE_NAME_1=633;Javascript;0;EUTF-8;1;1;0;%2Fhome%2Fneffes%2Fprojects%2FAR%2FAR_Server%2Fserver%2FioServer.js;0;4
+current_page=-1
 
 [VTE]
 last_dir=/home/neffes

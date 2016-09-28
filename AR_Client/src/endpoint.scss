@@ -1,9 +1,14 @@
 //endpoint.scss
 $active_bg: #286090;
 $active_font: #FFF;
+$image_hover_bg: rgba(0,0,0,0.5);
 
 
-
+.input-group .Select.is-open{z-index:100}
+.input-group .input,.input-group .Select{z-index:10}
+.input-group {
+    margin-bottom: 10px;
+}
 .row-area {
 	@extend .row;
 	margin-top:20px
@@ -30,3 +35,46 @@ $active_font: #FFF;
 }
 
 .left-side li a:focus{@extend .active}
+.well-default{
+	float: left;
+	background-color: white;
+	border:none;
+	box-shadow:none;
+	@extend .well-sm;
+}
+.galImages{
+	    height: 135px;
+		margin-bottom: 10px;
+		width: 180px;
+    }
+
+.inputGroupAddon .Select-control{border-radius:0px 4px 4px 0px;}
+.imageBox{position:relative;    cursor: pointer;}
+div.blurWithName div{padding-top: 50px;}
+div.blurWithName{
+	display: none;
+    width: 100%;
+    height: 100%;
+    background-color: $image_hover_bg;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color:$active_font;
+	}
+.imageBox:hover > .galImages{box-shadow: 0px 0px 15px 3px green;}
+.imageBox:hover > div.blurWithName{display:block;}
+.borderItem{
+	padding: 6px;
+    border: 1px solid grey;
+    position: fixed;
+    left: 250px;
+    top: 121px;
+    width: 64%;
+    z-index: 100;
+    background-color: white;
+}
+
+input[type='button']{
+	@extend .btn;
+	@extend .btn-default;
+	}
