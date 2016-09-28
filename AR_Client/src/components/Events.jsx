@@ -2,18 +2,36 @@
 import React from 'react'
 import Panel from './helpers/Panel'
 import {eventTitle} from '../vars'
+//import SelectGroup from './helpers/selectGroup'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
+import * as action_creator from '../action_creator'
+import EventsTable from './subComponents/eventsTable'
+import EventsEdit from './subComponents/eventsEdit'
+import { connect } from 'react-redux'
 
-export default React.createClass({
+export const events =  React.createClass({
 	mixins:[PureRenderMixin],
 	render(){
-		//const{}=this.props
+		const newEvent = this.props.newEvent?this.props.newEvent:0;
 		return(
 			<div className='Events'>
 				<Panel title={eventTitle}>
-
+					{newEvent?<EventsEdit {...this.props}/>:<EventsTable {...this.props}/>}
 				</Panel>
 			</div>
 		)
 	}
 })
+
+const mapStateToProps = function(store) {
+    return {
+		events:store.events.getIn(['eventsList']).toJS(),
+		newEvent:store.events.getIn(['newEvent']),
+		actions:store.actions.getIn(['list']).toJS()
+    }
+};
+
+
+const Events_conteiner = connect(mapStateToProps, action_creator)(events);
+
+export default Events_conteiner

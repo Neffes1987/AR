@@ -14,8 +14,6 @@ export default React.createClass({
 				</div>
 				<div className='panel-body'>
 					{children}
-
-					<button className='btn btn-default'>Сохранить</button>
 				</div>
 
 			</div>
