@@ -4,13 +4,15 @@ export function insertInMap(state,path,value) {return state.setIn(path,value)}
 
 export function insertInList(state,path,act,value) {
 	let listValue = state.getIn(path);
+	console.log('listValue ',listValue );
 	let newList;
 	switch(act){
 		case 'add':
 			newList = listValue.push(value);
 			break;
 		case 'delete':
-			newList = listValue.splice(value,1);
+			const pos= listValue.indexOf(value)
+			newList = listValue.splice(pos,1);
 			break;
 		default: newList = listValue;
 	}

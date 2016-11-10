@@ -1,6 +1,6 @@
 //Events.jsx
 import {Map,List} from 'immutable'
-import {insertInMap,insertInList} from './reducer_core'
+import {insertInMap,insertInList,changeMap} from './reducer_core'
 
 let initialState = Map({
 	eventsList:Map({
@@ -13,7 +13,8 @@ let initialState = Map({
 		7:Map({id:'7',name:'Врата 7',description:'fsdgadf',status:'1',actionsList:List([1,2])}),
 	}),
 	newEvent:0,
-	filterValue:''
+	filterValue:'',
+	eventTemplate:Map({id:'new',name:'1',description:'',status:'1',actionsList:List([])})
 })
 
 
@@ -25,9 +26,9 @@ function events(state = initialState, action) {
 		case 'EVENTS_ARRAY_CHANGE':
 			//let count = state.getIn(['modelsList']).size;
 			//let value = insertInMap(action.value,['id'],'new_'+count);
-		return insertInList(state,action.path,action.act,value);
+		return insertInList(state,action.path,action.act,action.value);
 		case 'EVENTS_GROUP_CHANGE':
-			return changeMap(state,action.path,action.act,value);
+			return changeMap(state,action.path,action.act,action.value);
         default: return state
     }
 }

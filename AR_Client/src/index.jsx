@@ -1,7 +1,7 @@
 //index.js
 import React from 'react'
 import ReactDom from 'react-dom'
-import {Router,Route,hashHistory,IndexRoute} from 'react-router'
+import {Router,Route,IndexRoute,browserHistory} from 'react-router'
 import {createStore,applyMiddleware} from 'redux'
 import {Provider} from 'react-redux'
 import createLogger from 'redux-logger'
@@ -19,10 +19,8 @@ import Events from './components/Events'
 import Lut from './components/Lut'
 import Characters from './components/Characters'
 import BD from './components/BD'
-import Log from './components/Log'
-import Chat from './components/Chat'
 import Intro from './components/Intro'
-import Wrapper from './components/Wrapper'
+import loginPage from './components/loginPage'
 
 const logger = createLogger();
 
@@ -31,30 +29,32 @@ const logger = createLogger();
 
 //const store = createStore(reducer,applyMiddleware(logger,remoteActionMiddleware(socket)));
 const store = createStore(reducer,applyMiddleware(logger));
-
 //socket.on('state',(state)=>{console.log('FROM_SERVER',state);store.dispatch(setState(state))});
-
-const routes = <Route component={App}>
-				<Route path='/' component={Wrapper}>
-					<Route path='admin' component={Main}>
-						<IndexRoute  component={Intro} />
-						<Route path='Connection_settings' component={Connections}/>
-						<Route path='Main_settings' component={Main_settings}/>
-						<Route path='Gallary' component={Gallary}/>
-						<Route path='Actions' component={Actions}/>
-						<Route path='Events' component={Events}/>
-						<Route path='Lut' component={Lut}/>
-						<Route path='Characters' component={Characters}/>
-						<Route path='BD' component={BD}/>
-						<Route path='Chat' component={Chat}/>
-						<Route path='Log' component={Log}/>
-					</Route>
+function checkLogin(store,nextState, replace) {
+	const state = store.getState();
+	console.log('state',state);
+	const access = state.autorization.getIn(['data','access'])?state.autorization.getIn(['data','access']):'';
+	if (access== '')replace('/');
+}
+const routes = <Route path='/' component={App}>
+				<IndexRoute component={loginPage}/>
+				<Route path='admin/' component={Main} onEnter={checkLogin.bind(null,store)}>
+					<IndexRoute  component={Intro} />
+					<Route path='Connection_settings/' component={Connections}/>
+					<Route path='Main_settings/' component={Main_settings}/>
+					<Route path='Gallary/' component={Gallary}/>
+					<Route path='Actions/' component={Actions}/>
+					<Route path='Events/' component={Events}/>
+					<Route path='Lut/' component={Lut}/>
+					<Route path='Characters/' component={Characters}/>
+					<Route path='BD/' component={BD}/>
 				</Route>
+				<Route path='*' component={loginPage}/>
 			</Route>
 
 ReactDom.render(
 	<Provider store={store}>
-		<Router history={hashHistory}>
+		<Router history={browserHistory}>
 			{routes}
 		</Router>
 	</Provider>,document.getElementById('app'));

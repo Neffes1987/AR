@@ -1,0 +1,510 @@
+
+21:21:52.178 INFO  create the database: ./server/db/test 
+21:21:52.194 INFO  База создана{} 
+21:21:52.195 INFO  insert the model: {"user":"dddd","id":"f6c32a83c1424f13912d6467a98c66cd","lastUpdated":"2016-11-01T18:21:52.195Z","dateCreated":"2016-11-01T18:21:52.195Z","version":0} 
+21:21:52.196 INFO  backup the database to ./server/db/users.dat 
+21:21:52.199 INFO  calculate stats 
+21:21:52.200 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:21:52.200 INFO  data = 
+21:24:22.386 INFO  create the database: ./server/db/test 
+21:24:22.402 INFO  База создана{} 
+21:24:22.403 INFO  insert the model: {"user":"dddd","id":"e82a34908c444cb4883a00a09d052651","lastUpdated":"2016-11-01T18:24:22.403Z","dateCreated":"2016-11-01T18:24:22.403Z","version":0} 
+21:24:22.404 INFO  backup the database to ./server/db/users.dat 
+21:24:22.407 INFO  calculate stats 
+21:24:22.408 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:24:22.408 INFO  data = 
+21:24:46.430 INFO  create the database: ./server/db/test 
+21:24:46.445 INFO  База создана{} 
+21:24:46.446 INFO  insert the model: {"user":"dddd","id":"3f091892ee134a90924ecb7551d94186","lastUpdated":"2016-11-01T18:24:46.446Z","dateCreated":"2016-11-01T18:24:46.446Z","version":0} 
+21:24:46.447 INFO  backup the database to ./server/db/users.dat 
+21:24:46.450 INFO  calculate stats 
+21:24:46.451 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:24:46.451 INFO  data = 
+21:24:46.687 INFO  find the record with this key: users:3f091892ee134a90924ecb7551d94186 
+21:24:46.691 INFO  users:3c34af6de9f14d4abba5cbcb0f1cedec:{"user":"dddd","id":"3c34af6de9f14d4abba5cbcb0f1cedec","lastUpdated":"2016-11-01T17:24:47.050Z","dateCreated":"2016-11-01T17:24:47.050Z","version":0} 
+21:24:46.696 INFO  dump db {"user":"dddd","id":"3f091892ee134a90924ecb7551d94186","lastUpdated":"2016-11-01T18:24:46.446Z","dateCreated":"2016-11-01T18:24:46.446Z","version":0} 
+21:24:46.697 INFO  users:3f091892ee134a90924ecb7551d94186:{"user":"dddd","id":"3f091892ee134a90924ecb7551d94186","lastUpdated":"2016-11-01T18:24:46.446Z","dateCreated":"2016-11-01T18:24:46.446Z","version":0} 
+21:24:46.699 INFO  users:a6628e51db9943cca7cebcbf56fc6fd9:{"user":"dddd","id":"a6628e51db9943cca7cebcbf56fc6fd9","lastUpdated":"2016-11-01T18:15:08.963Z","dateCreated":"2016-11-01T18:15:08.963Z","version":0} 
+21:24:46.701 INFO  list[] 
+21:24:46.705 INFO  {"rowcount":12,"domains":{"1322a88a613e4c4a94fe6db34f629a42":1,"user":8,"users":3},"errors":[]} 
+21:24:46.707 INFO  dump db 12 
+21:26:26.901 INFO  create the database: ./server/db/test 
+21:26:26.917 INFO  insert the model: {"user":"dddd","id":"cacaeee81c3140cbae9f3bd1b9621447","lastUpdated":"2016-11-01T18:26:26.917Z","dateCreated":"2016-11-01T18:26:26.917Z","version":0} 
+21:26:26.918 INFO  backup the database to ./server/db/users.dat 
+21:26:26.921 INFO  calculate stats 
+21:26:26.922 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:26:26.922 INFO  data = 
+21:26:27.141 INFO  find the record with this key: users:cacaeee81c3140cbae9f3bd1b9621447 
+21:26:27.147 INFO  users:3c34af6de9f14d4abba5cbcb0f1cedec:{"user":"dddd","id":"3c34af6de9f14d4abba5cbcb0f1cedec","lastUpdated":"2016-11-01T17:24:47.050Z","dateCreated":"2016-11-01T17:24:47.050Z","version":0} 
+21:26:27.151 INFO  dump db {"user":"dddd","id":"cacaeee81c3140cbae9f3bd1b9621447","lastUpdated":"2016-11-01T18:26:26.917Z","dateCreated":"2016-11-01T18:26:26.917Z","version":0} 
+21:26:27.153 INFO  users:3f091892ee134a90924ecb7551d94186:{"user":"dddd","id":"3f091892ee134a90924ecb7551d94186","lastUpdated":"2016-11-01T18:24:46.446Z","dateCreated":"2016-11-01T18:24:46.446Z","version":0} 
+21:26:27.154 INFO  users:a6628e51db9943cca7cebcbf56fc6fd9:{"user":"dddd","id":"a6628e51db9943cca7cebcbf56fc6fd9","lastUpdated":"2016-11-01T18:15:08.963Z","dateCreated":"2016-11-01T18:15:08.963Z","version":0} 
+21:26:27.156 INFO  users:cacaeee81c3140cbae9f3bd1b9621447:{"user":"dddd","id":"cacaeee81c3140cbae9f3bd1b9621447","lastUpdated":"2016-11-01T18:26:26.917Z","dateCreated":"2016-11-01T18:26:26.917Z","version":0} 
+21:26:27.159 INFO  list[] 
+21:26:27.164 INFO  {"rowcount":13,"domains":{"1322a88a613e4c4a94fe6db34f629a42":1,"user":8,"users":4},"errors":[]} 
+21:27:07.843 INFO  create the database: ./server/db/test 
+21:27:07.861 INFO  insert the model: {"user":"dddd","id":"2bf01909293a4a559d04af9136bc719a","lastUpdated":"2016-11-01T18:27:07.861Z","dateCreated":"2016-11-01T18:27:07.861Z","version":0} 
+21:27:07.862 INFO  backup the database to ./server/db/users.dat 
+21:27:07.865 INFO  calculate stats 
+21:27:07.866 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:27:07.867 INFO  data = 
+21:27:59.240 INFO  create the database: ./server/db/test 
+21:27:59.256 INFO  insert the model: {"user":"dddd","id":"c14502f63fb14b8aa72abf2d14b914b2","lastUpdated":"2016-11-01T18:27:59.256Z","dateCreated":"2016-11-01T18:27:59.256Z","version":0} 
+21:27:59.257 INFO  backup the database to ./server/db/users.dat 
+21:27:59.260 INFO  calculate stats 
+21:27:59.261 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:27:59.261 INFO  data = 
+21:27:59.430 INFO  find the record with this key: users:c14502f63fb14b8aa72abf2d14b914b2 
+21:27:59.434 INFO  users:3c34af6de9f14d4abba5cbcb0f1cedec:{"user":"dddd","id":"3c34af6de9f14d4abba5cbcb0f1cedec","lastUpdated":"2016-11-01T17:24:47.050Z","dateCreated":"2016-11-01T17:24:47.050Z","version":0} 
+21:27:59.439 INFO  dump db {"user":"dddd","id":"c14502f63fb14b8aa72abf2d14b914b2","lastUpdated":"2016-11-01T18:27:59.256Z","dateCreated":"2016-11-01T18:27:59.256Z","version":0} 
+21:27:59.441 INFO  users:3f091892ee134a90924ecb7551d94186:{"user":"dddd","id":"3f091892ee134a90924ecb7551d94186","lastUpdated":"2016-11-01T18:24:46.446Z","dateCreated":"2016-11-01T18:24:46.446Z","version":0} 
+21:27:59.442 INFO  users:a6628e51db9943cca7cebcbf56fc6fd9:{"user":"dddd","id":"a6628e51db9943cca7cebcbf56fc6fd9","lastUpdated":"2016-11-01T18:15:08.963Z","dateCreated":"2016-11-01T18:15:08.963Z","version":0} 
+21:27:59.443 INFO  users:c14502f63fb14b8aa72abf2d14b914b2:{"user":"dddd","id":"c14502f63fb14b8aa72abf2d14b914b2","lastUpdated":"2016-11-01T18:27:59.256Z","dateCreated":"2016-11-01T18:27:59.256Z","version":0} 
+21:27:59.445 INFO  users:cacaeee81c3140cbae9f3bd1b9621447:{"user":"dddd","id":"cacaeee81c3140cbae9f3bd1b9621447","lastUpdated":"2016-11-01T18:26:26.917Z","dateCreated":"2016-11-01T18:26:26.917Z","version":0} 
+21:27:59.448 INFO  list[] 
+21:27:59.454 INFO  {"rowcount":14,"domains":{"1322a88a613e4c4a94fe6db34f629a42":1,"user":8,"users":5},"errors":[]} 
+21:28:17.590 INFO  create the database: ./server/db/test 
+21:28:17.606 INFO  insert the model: {"user":"dddd","id":"b67280d8afeb4596b0ebba4f71adbd6d","lastUpdated":"2016-11-01T18:28:17.605Z","dateCreated":"2016-11-01T18:28:17.605Z","version":0} 
+21:28:17.607 INFO  backup the database to ./server/db/users.dat 
+21:28:17.609 INFO  calculate stats 
+21:28:17.610 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:28:17.611 INFO  data = 
+21:28:17.880 INFO  find the record with this key: users:b67280d8afeb4596b0ebba4f71adbd6d 
+21:28:17.887 INFO  users:3c34af6de9f14d4abba5cbcb0f1cedec:{"user":"dddd","id":"3c34af6de9f14d4abba5cbcb0f1cedec","lastUpdated":"2016-11-01T17:24:47.050Z","dateCreated":"2016-11-01T17:24:47.050Z","version":0} 
+21:28:17.889 INFO  dump db {"user":"dddd","id":"b67280d8afeb4596b0ebba4f71adbd6d","lastUpdated":"2016-11-01T18:28:17.605Z","dateCreated":"2016-11-01T18:28:17.605Z","version":0} 
+21:28:17.891 INFO  users:3f091892ee134a90924ecb7551d94186:{"user":"dddd","id":"3f091892ee134a90924ecb7551d94186","lastUpdated":"2016-11-01T18:24:46.446Z","dateCreated":"2016-11-01T18:24:46.446Z","version":0} 
+21:28:17.893 INFO  users:a6628e51db9943cca7cebcbf56fc6fd9:{"user":"dddd","id":"a6628e51db9943cca7cebcbf56fc6fd9","lastUpdated":"2016-11-01T18:15:08.963Z","dateCreated":"2016-11-01T18:15:08.963Z","version":0} 
+21:28:17.894 INFO  users:b67280d8afeb4596b0ebba4f71adbd6d:{"user":"dddd","id":"b67280d8afeb4596b0ebba4f71adbd6d","lastUpdated":"2016-11-01T18:28:17.605Z","dateCreated":"2016-11-01T18:28:17.605Z","version":0} 
+21:28:17.895 INFO  users:c14502f63fb14b8aa72abf2d14b914b2:{"user":"dddd","id":"c14502f63fb14b8aa72abf2d14b914b2","lastUpdated":"2016-11-01T18:27:59.256Z","dateCreated":"2016-11-01T18:27:59.256Z","version":0} 
+21:28:17.897 INFO  users:cacaeee81c3140cbae9f3bd1b9621447:{"user":"dddd","id":"cacaeee81c3140cbae9f3bd1b9621447","lastUpdated":"2016-11-01T18:26:26.917Z","dateCreated":"2016-11-01T18:26:26.917Z","version":0} 
+21:28:17.900 INFO  list[] 
+21:28:17.911 INFO  {"rowcount":15,"domains":{"1322a88a613e4c4a94fe6db34f629a42":1,"user":8,"users":6},"errors":[]} 
+21:28:58.071 INFO  create the database: ./server/db/test 
+21:28:58.087 INFO  insert the model: {"user":"dddd","id":"c06f4938ea794d259d13174eb894b1d3","lastUpdated":"2016-11-01T18:28:58.087Z","dateCreated":"2016-11-01T18:28:58.087Z","version":0} 
+21:28:58.088 INFO  backup the database to ./server/db/users.dat 
+21:28:58.090 INFO  calculate stats 
+21:28:58.091 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:28:58.092 INFO  data = 
+21:28:58.289 INFO  find the record with this key: users:c06f4938ea794d259d13174eb894b1d3 
+21:28:58.297 INFO  users:3c34af6de9f14d4abba5cbcb0f1cedec:{"user":"dddd","id":"3c34af6de9f14d4abba5cbcb0f1cedec","lastUpdated":"2016-11-01T17:24:47.050Z","dateCreated":"2016-11-01T17:24:47.050Z","version":0} 
+21:28:58.299 INFO  dump db {"user":"dddd","id":"c06f4938ea794d259d13174eb894b1d3","lastUpdated":"2016-11-01T18:28:58.087Z","dateCreated":"2016-11-01T18:28:58.087Z","version":0} 
+21:28:58.301 INFO  users:3f091892ee134a90924ecb7551d94186:{"user":"dddd","id":"3f091892ee134a90924ecb7551d94186","lastUpdated":"2016-11-01T18:24:46.446Z","dateCreated":"2016-11-01T18:24:46.446Z","version":0} 
+21:28:58.302 INFO  users:a6628e51db9943cca7cebcbf56fc6fd9:{"user":"dddd","id":"a6628e51db9943cca7cebcbf56fc6fd9","lastUpdated":"2016-11-01T18:15:08.963Z","dateCreated":"2016-11-01T18:15:08.963Z","version":0} 
+21:28:58.303 INFO  users:b67280d8afeb4596b0ebba4f71adbd6d:{"user":"dddd","id":"b67280d8afeb4596b0ebba4f71adbd6d","lastUpdated":"2016-11-01T18:28:17.605Z","dateCreated":"2016-11-01T18:28:17.605Z","version":0} 
+21:28:58.305 INFO  users:c06f4938ea794d259d13174eb894b1d3:{"user":"dddd","id":"c06f4938ea794d259d13174eb894b1d3","lastUpdated":"2016-11-01T18:28:58.087Z","dateCreated":"2016-11-01T18:28:58.087Z","version":0} 
+21:28:58.306 INFO  users:c14502f63fb14b8aa72abf2d14b914b2:{"user":"dddd","id":"c14502f63fb14b8aa72abf2d14b914b2","lastUpdated":"2016-11-01T18:27:59.256Z","dateCreated":"2016-11-01T18:27:59.256Z","version":0} 
+21:28:58.308 INFO  users:cacaeee81c3140cbae9f3bd1b9621447:{"user":"dddd","id":"cacaeee81c3140cbae9f3bd1b9621447","lastUpdated":"2016-11-01T18:26:26.917Z","dateCreated":"2016-11-01T18:26:26.917Z","version":0} 
+21:28:58.312 INFO  list[] 
+21:28:58.317 INFO  {"rowcount":16,"domains":{"1322a88a613e4c4a94fe6db34f629a42":1,"user":8,"users":7},"errors":[]} 
+21:29:48.197 INFO  create the database: ./server/db/test 
+21:29:48.214 INFO  insert the model: {"user":"dddd","id":"ad097e762c704d08b9385aafee41111c","lastUpdated":"2016-11-01T18:29:48.214Z","dateCreated":"2016-11-01T18:29:48.214Z","version":0} 
+21:29:48.215 INFO  backup the database to ./server/db/users.dat 
+21:29:48.218 INFO  calculate stats 
+21:29:48.218 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:29:48.425 INFO  find the record with this key: users:ad097e762c704d08b9385aafee41111c 
+21:29:48.432 INFO  dump db {"user":"dddd","id":"ad097e762c704d08b9385aafee41111c","lastUpdated":"2016-11-01T18:29:48.214Z","dateCreated":"2016-11-01T18:29:48.214Z","version":0} 
+21:29:48.445 INFO  {"rowcount":17,"domains":{"1322a88a613e4c4a94fe6db34f629a42":1,"user":8,"users":8},"errors":[]} 
+21:30:13.008 INFO  create the database: ./server/db/test 
+21:30:13.025 INFO  insert the model: {"user":"dddd","id":"aa65f3ebc57c4322941176cdea4bf4e0","lastUpdated":"2016-11-01T18:30:13.025Z","dateCreated":"2016-11-01T18:30:13.025Z","version":0} 
+21:30:13.026 INFO  backup the database to ./server/db/users.dat 
+21:30:13.029 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:30:13.308 INFO  find the record with this key: users:aa65f3ebc57c4322941176cdea4bf4e0 
+21:30:13.318 INFO  dump db {"user":"dddd","id":"aa65f3ebc57c4322941176cdea4bf4e0","lastUpdated":"2016-11-01T18:30:13.025Z","dateCreated":"2016-11-01T18:30:13.025Z","version":0} 
+21:30:25.226 INFO  create the database: ./server/db/test 
+21:30:25.243 INFO  insert the model: {"user":"dddd","id":"25028ae9d19741bab2dcad2ab90f1172","lastUpdated":"2016-11-01T18:30:25.243Z","dateCreated":"2016-11-01T18:30:25.243Z","version":0} 
+21:30:25.244 INFO  backup the database to ./server/db/users.dat 
+21:30:25.247 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:30:25.502 INFO  find the record with this key: users:25028ae9d19741bab2dcad2ab90f1172 
+21:30:44.676 INFO  create the database: ./server/db/test 
+21:30:44.693 INFO  insert the model: {"user":"dddd","id":"70f0ffbdd13a4ae798c459bf0e6a9f80","lastUpdated":"2016-11-01T18:30:44.693Z","dateCreated":"2016-11-01T18:30:44.693Z","version":0} 
+21:30:44.694 INFO  backup the database to ./server/db/users.dat 
+21:30:44.697 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:30:44.965 INFO  find the record with this key: users:70f0ffbdd13a4ae798c459bf0e6a9f80 
+21:31:09.808 INFO  create the database: ./server/db/test 
+21:31:09.825 INFO  insert the model: {"user":"dddd","id":"fe4867e9364c41b196b60988032fce6c","lastUpdated":"2016-11-01T18:31:09.825Z","dateCreated":"2016-11-01T18:31:09.825Z","version":0} 
+21:31:09.826 INFO  backup the database to ./server/db/users.dat 
+21:31:09.829 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:31:10.126 INFO  find the record with this key: users:fe4867e9364c41b196b60988032fce6c 
+21:31:10.140 INFO  list[] 
+21:31:19.793 INFO  create the database: ./server/db/test 
+21:31:19.810 INFO  insert the model: {"user":"dddd","id":"93be8e0a3a3647f29a280d760eae7096","lastUpdated":"2016-11-01T18:31:19.810Z","dateCreated":"2016-11-01T18:31:19.810Z","version":0} 
+21:31:19.811 INFO  backup the database to ./server/db/users.dat 
+21:31:19.814 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:31:20.063 INFO  find the record with this key: users:93be8e0a3a3647f29a280d760eae7096 
+21:31:20.070 INFO  users:25028ae9d19741bab2dcad2ab90f1172:{"user":"dddd","id":"25028ae9d19741bab2dcad2ab90f1172","lastUpdated":"2016-11-01T18:30:25.243Z","dateCreated":"2016-11-01T18:30:25.243Z","version":0} 
+21:31:20.074 INFO  users:3c34af6de9f14d4abba5cbcb0f1cedec:{"user":"dddd","id":"3c34af6de9f14d4abba5cbcb0f1cedec","lastUpdated":"2016-11-01T17:24:47.050Z","dateCreated":"2016-11-01T17:24:47.050Z","version":0} 
+21:31:20.075 INFO  users:3f091892ee134a90924ecb7551d94186:{"user":"dddd","id":"3f091892ee134a90924ecb7551d94186","lastUpdated":"2016-11-01T18:24:46.446Z","dateCreated":"2016-11-01T18:24:46.446Z","version":0} 
+21:31:20.076 INFO  users:70f0ffbdd13a4ae798c459bf0e6a9f80:{"user":"dddd","id":"70f0ffbdd13a4ae798c459bf0e6a9f80","lastUpdated":"2016-11-01T18:30:44.693Z","dateCreated":"2016-11-01T18:30:44.693Z","version":0} 
+21:31:20.077 INFO  users:93be8e0a3a3647f29a280d760eae7096:{"user":"dddd","id":"93be8e0a3a3647f29a280d760eae7096","lastUpdated":"2016-11-01T18:31:19.810Z","dateCreated":"2016-11-01T18:31:19.810Z","version":0} 
+21:31:20.079 INFO  users:a6628e51db9943cca7cebcbf56fc6fd9:{"user":"dddd","id":"a6628e51db9943cca7cebcbf56fc6fd9","lastUpdated":"2016-11-01T18:15:08.963Z","dateCreated":"2016-11-01T18:15:08.963Z","version":0} 
+21:31:20.080 INFO  users:aa65f3ebc57c4322941176cdea4bf4e0:{"user":"dddd","id":"aa65f3ebc57c4322941176cdea4bf4e0","lastUpdated":"2016-11-01T18:30:13.025Z","dateCreated":"2016-11-01T18:30:13.025Z","version":0} 
+21:31:20.081 INFO  users:ad097e762c704d08b9385aafee41111c:{"user":"dddd","id":"ad097e762c704d08b9385aafee41111c","lastUpdated":"2016-11-01T18:29:48.214Z","dateCreated":"2016-11-01T18:29:48.214Z","version":0} 
+21:31:20.082 INFO  users:b67280d8afeb4596b0ebba4f71adbd6d:{"user":"dddd","id":"b67280d8afeb4596b0ebba4f71adbd6d","lastUpdated":"2016-11-01T18:28:17.605Z","dateCreated":"2016-11-01T18:28:17.605Z","version":0} 
+21:31:20.084 INFO  users:c06f4938ea794d259d13174eb894b1d3:{"user":"dddd","id":"c06f4938ea794d259d13174eb894b1d3","lastUpdated":"2016-11-01T18:28:58.087Z","dateCreated":"2016-11-01T18:28:58.087Z","version":0} 
+21:31:20.086 INFO  users:c14502f63fb14b8aa72abf2d14b914b2:{"user":"dddd","id":"c14502f63fb14b8aa72abf2d14b914b2","lastUpdated":"2016-11-01T18:27:59.256Z","dateCreated":"2016-11-01T18:27:59.256Z","version":0} 
+21:31:20.086 INFO  users:cacaeee81c3140cbae9f3bd1b9621447:{"user":"dddd","id":"cacaeee81c3140cbae9f3bd1b9621447","lastUpdated":"2016-11-01T18:26:26.917Z","dateCreated":"2016-11-01T18:26:26.917Z","version":0} 
+21:31:20.089 INFO  users:fe4867e9364c41b196b60988032fce6c:{"user":"dddd","id":"fe4867e9364c41b196b60988032fce6c","lastUpdated":"2016-11-01T18:31:09.825Z","dateCreated":"2016-11-01T18:31:09.825Z","version":0} 
+21:32:10.394 INFO  create the database: ./server/db/test 
+21:32:10.411 INFO  insert the model: {"user":"dddd","id":"78ac9a756f2a45278c37b52c96a7a5df","lastUpdated":"2016-11-01T18:32:10.411Z","dateCreated":"2016-11-01T18:32:10.411Z","version":0} 
+21:32:10.412 INFO  backup the database to ./server/db/users.dat 
+21:32:10.415 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:32:10.661 INFO  find the record with this key: users:78ac9a756f2a45278c37b52c96a7a5df 
+21:32:34.499 INFO  create the database: ./server/db/test 
+21:32:34.516 INFO  insert the model: {"user":"dddd","id":"8a67cf3a6ec349f7b58d68b79af2c2a2","lastUpdated":"2016-11-01T18:32:34.515Z","dateCreated":"2016-11-01T18:32:34.515Z","version":0} 
+21:32:34.517 INFO  backup the database to ./server/db/users.dat 
+21:32:34.520 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:32:34.757 INFO  find the record with this key: users:8a67cf3a6ec349f7b58d68b79af2c2a2 
+21:32:34.764 INFO  dddd 
+21:32:34.768 INFO  dddd 
+21:32:34.769 INFO  dddd 
+21:32:34.770 INFO  dddd 
+21:32:34.772 INFO  dddd 
+21:32:34.774 INFO  dddd 
+21:32:34.775 INFO  dddd 
+21:32:34.776 INFO  dddd 
+21:32:34.777 INFO  dddd 
+21:32:34.780 INFO  dddd 
+21:32:34.782 INFO  dddd 
+21:32:34.783 INFO  dddd 
+21:32:34.787 INFO  dddd 
+21:32:34.789 INFO  dddd 
+21:32:34.791 INFO  dddd 
+21:32:55.081 INFO  create the database: ./server/db/test 
+21:32:55.097 INFO  insert the model: {"user":"dddd","id":"f9265f0f63df40929a8cffce7490d3b8","lastUpdated":"2016-11-01T18:32:55.096Z","dateCreated":"2016-11-01T18:32:55.096Z","version":0} 
+21:32:55.098 INFO  backup the database to ./server/db/users.dat 
+21:32:55.100 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:32:55.363 INFO  find the record with this key: users:f9265f0f63df40929a8cffce7490d3b8 
+21:32:55.370 INFO  user 
+21:32:55.370 INFO  users:25028ae9d19741bab2dcad2ab90f1172:{"user":"dddd","id":"25028ae9d19741bab2dcad2ab90f1172","lastUpdated":"2016-11-01T18:30:25.243Z","dateCreated":"2016-11-01T18:30:25.243Z","version":0} 
+21:32:55.375 INFO  user 
+21:32:55.375 INFO  users:3c34af6de9f14d4abba5cbcb0f1cedec:{"user":"dddd","id":"3c34af6de9f14d4abba5cbcb0f1cedec","lastUpdated":"2016-11-01T17:24:47.050Z","dateCreated":"2016-11-01T17:24:47.050Z","version":0} 
+21:32:55.378 INFO  user 
+21:32:55.378 INFO  users:3f091892ee134a90924ecb7551d94186:{"user":"dddd","id":"3f091892ee134a90924ecb7551d94186","lastUpdated":"2016-11-01T18:24:46.446Z","dateCreated":"2016-11-01T18:24:46.446Z","version":0} 
+21:32:55.379 INFO  user 
+21:32:55.379 INFO  users:70f0ffbdd13a4ae798c459bf0e6a9f80:{"user":"dddd","id":"70f0ffbdd13a4ae798c459bf0e6a9f80","lastUpdated":"2016-11-01T18:30:44.693Z","dateCreated":"2016-11-01T18:30:44.693Z","version":0} 
+21:32:55.382 INFO  user 
+21:32:55.382 INFO  users:78ac9a756f2a45278c37b52c96a7a5df:{"user":"dddd","id":"78ac9a756f2a45278c37b52c96a7a5df","lastUpdated":"2016-11-01T18:32:10.411Z","dateCreated":"2016-11-01T18:32:10.411Z","version":0} 
+21:32:55.385 INFO  user 
+21:32:55.385 INFO  users:8a67cf3a6ec349f7b58d68b79af2c2a2:{"user":"dddd","id":"8a67cf3a6ec349f7b58d68b79af2c2a2","lastUpdated":"2016-11-01T18:32:34.515Z","dateCreated":"2016-11-01T18:32:34.515Z","version":0} 
+21:32:55.391 INFO  user 
+21:32:55.391 INFO  users:93be8e0a3a3647f29a280d760eae7096:{"user":"dddd","id":"93be8e0a3a3647f29a280d760eae7096","lastUpdated":"2016-11-01T18:31:19.810Z","dateCreated":"2016-11-01T18:31:19.810Z","version":0} 
+21:32:55.392 INFO  user 
+21:32:55.392 INFO  users:a6628e51db9943cca7cebcbf56fc6fd9:{"user":"dddd","id":"a6628e51db9943cca7cebcbf56fc6fd9","lastUpdated":"2016-11-01T18:15:08.963Z","dateCreated":"2016-11-01T18:15:08.963Z","version":0} 
+21:32:55.394 INFO  user 
+21:32:55.394 INFO  users:aa65f3ebc57c4322941176cdea4bf4e0:{"user":"dddd","id":"aa65f3ebc57c4322941176cdea4bf4e0","lastUpdated":"2016-11-01T18:30:13.025Z","dateCreated":"2016-11-01T18:30:13.025Z","version":0} 
+21:32:55.398 INFO  user 
+21:32:55.398 INFO  users:ad097e762c704d08b9385aafee41111c:{"user":"dddd","id":"ad097e762c704d08b9385aafee41111c","lastUpdated":"2016-11-01T18:29:48.214Z","dateCreated":"2016-11-01T18:29:48.214Z","version":0} 
+21:32:55.400 INFO  user 
+21:32:55.400 INFO  users:b67280d8afeb4596b0ebba4f71adbd6d:{"user":"dddd","id":"b67280d8afeb4596b0ebba4f71adbd6d","lastUpdated":"2016-11-01T18:28:17.605Z","dateCreated":"2016-11-01T18:28:17.605Z","version":0} 
+21:32:55.402 INFO  user 
+21:32:55.402 INFO  users:c06f4938ea794d259d13174eb894b1d3:{"user":"dddd","id":"c06f4938ea794d259d13174eb894b1d3","lastUpdated":"2016-11-01T18:28:58.087Z","dateCreated":"2016-11-01T18:28:58.087Z","version":0} 
+21:32:55.404 INFO  user 
+21:32:55.404 INFO  users:c14502f63fb14b8aa72abf2d14b914b2:{"user":"dddd","id":"c14502f63fb14b8aa72abf2d14b914b2","lastUpdated":"2016-11-01T18:27:59.256Z","dateCreated":"2016-11-01T18:27:59.256Z","version":0} 
+21:32:55.406 INFO  user 
+21:32:55.406 INFO  users:cacaeee81c3140cbae9f3bd1b9621447:{"user":"dddd","id":"cacaeee81c3140cbae9f3bd1b9621447","lastUpdated":"2016-11-01T18:26:26.917Z","dateCreated":"2016-11-01T18:26:26.917Z","version":0} 
+21:32:55.411 INFO  user 
+21:32:55.411 INFO  users:f9265f0f63df40929a8cffce7490d3b8:{"user":"dddd","id":"f9265f0f63df40929a8cffce7490d3b8","lastUpdated":"2016-11-01T18:32:55.096Z","dateCreated":"2016-11-01T18:32:55.096Z","version":0} 
+21:32:55.416 INFO  user 
+21:32:55.416 INFO  users:fe4867e9364c41b196b60988032fce6c:{"user":"dddd","id":"fe4867e9364c41b196b60988032fce6c","lastUpdated":"2016-11-01T18:31:09.825Z","dateCreated":"2016-11-01T18:31:09.825Z","version":0} 
+21:33:08.346 INFO  create the database: ./server/db/test 
+21:33:08.362 INFO  insert the model: {"user":"dddd","id":"9a1cf72bf7904a9ca146f7f7e01143ad","lastUpdated":"2016-11-01T18:33:08.362Z","dateCreated":"2016-11-01T18:33:08.362Z","version":0} 
+21:33:08.363 INFO  backup the database to ./server/db/users.dat 
+21:33:08.366 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:33:08.611 INFO  find the record with this key: users:9a1cf72bf7904a9ca146f7f7e01143ad 
+21:33:08.617 INFO  users:25028ae9d19741bab2dcad2ab90f1172:{"user":"dddd","id":"25028ae9d19741bab2dcad2ab90f1172","lastUpdated":"2016-11-01T18:30:25.243Z","dateCreated":"2016-11-01T18:30:25.243Z","version":0} 
+21:33:08.621 INFO  users:3c34af6de9f14d4abba5cbcb0f1cedec:{"user":"dddd","id":"3c34af6de9f14d4abba5cbcb0f1cedec","lastUpdated":"2016-11-01T17:24:47.050Z","dateCreated":"2016-11-01T17:24:47.050Z","version":0} 
+21:33:08.622 INFO  users:3f091892ee134a90924ecb7551d94186:{"user":"dddd","id":"3f091892ee134a90924ecb7551d94186","lastUpdated":"2016-11-01T18:24:46.446Z","dateCreated":"2016-11-01T18:24:46.446Z","version":0} 
+21:33:08.623 INFO  users:70f0ffbdd13a4ae798c459bf0e6a9f80:{"user":"dddd","id":"70f0ffbdd13a4ae798c459bf0e6a9f80","lastUpdated":"2016-11-01T18:30:44.693Z","dateCreated":"2016-11-01T18:30:44.693Z","version":0} 
+21:33:08.624 INFO  users:78ac9a756f2a45278c37b52c96a7a5df:{"user":"dddd","id":"78ac9a756f2a45278c37b52c96a7a5df","lastUpdated":"2016-11-01T18:32:10.411Z","dateCreated":"2016-11-01T18:32:10.411Z","version":0} 
+21:33:08.625 INFO  users:8a67cf3a6ec349f7b58d68b79af2c2a2:{"user":"dddd","id":"8a67cf3a6ec349f7b58d68b79af2c2a2","lastUpdated":"2016-11-01T18:32:34.515Z","dateCreated":"2016-11-01T18:32:34.515Z","version":0} 
+21:33:08.627 INFO  users:93be8e0a3a3647f29a280d760eae7096:{"user":"dddd","id":"93be8e0a3a3647f29a280d760eae7096","lastUpdated":"2016-11-01T18:31:19.810Z","dateCreated":"2016-11-01T18:31:19.810Z","version":0} 
+21:33:08.629 INFO  users:9a1cf72bf7904a9ca146f7f7e01143ad:{"user":"dddd","id":"9a1cf72bf7904a9ca146f7f7e01143ad","lastUpdated":"2016-11-01T18:33:08.362Z","dateCreated":"2016-11-01T18:33:08.362Z","version":0} 
+21:33:08.631 INFO  users:a6628e51db9943cca7cebcbf56fc6fd9:{"user":"dddd","id":"a6628e51db9943cca7cebcbf56fc6fd9","lastUpdated":"2016-11-01T18:15:08.963Z","dateCreated":"2016-11-01T18:15:08.963Z","version":0} 
+21:33:08.633 INFO  users:aa65f3ebc57c4322941176cdea4bf4e0:{"user":"dddd","id":"aa65f3ebc57c4322941176cdea4bf4e0","lastUpdated":"2016-11-01T18:30:13.025Z","dateCreated":"2016-11-01T18:30:13.025Z","version":0} 
+21:33:08.635 INFO  users:ad097e762c704d08b9385aafee41111c:{"user":"dddd","id":"ad097e762c704d08b9385aafee41111c","lastUpdated":"2016-11-01T18:29:48.214Z","dateCreated":"2016-11-01T18:29:48.214Z","version":0} 
+21:33:08.637 INFO  users:b67280d8afeb4596b0ebba4f71adbd6d:{"user":"dddd","id":"b67280d8afeb4596b0ebba4f71adbd6d","lastUpdated":"2016-11-01T18:28:17.605Z","dateCreated":"2016-11-01T18:28:17.605Z","version":0} 
+21:33:08.640 INFO  users:c06f4938ea794d259d13174eb894b1d3:{"user":"dddd","id":"c06f4938ea794d259d13174eb894b1d3","lastUpdated":"2016-11-01T18:28:58.087Z","dateCreated":"2016-11-01T18:28:58.087Z","version":0} 
+21:33:08.641 INFO  users:c14502f63fb14b8aa72abf2d14b914b2:{"user":"dddd","id":"c14502f63fb14b8aa72abf2d14b914b2","lastUpdated":"2016-11-01T18:27:59.256Z","dateCreated":"2016-11-01T18:27:59.256Z","version":0} 
+21:33:08.642 INFO  users:cacaeee81c3140cbae9f3bd1b9621447:{"user":"dddd","id":"cacaeee81c3140cbae9f3bd1b9621447","lastUpdated":"2016-11-01T18:26:26.917Z","dateCreated":"2016-11-01T18:26:26.917Z","version":0} 
+21:33:08.645 INFO  users:f9265f0f63df40929a8cffce7490d3b8:{"user":"dddd","id":"f9265f0f63df40929a8cffce7490d3b8","lastUpdated":"2016-11-01T18:32:55.096Z","dateCreated":"2016-11-01T18:32:55.096Z","version":0} 
+21:33:08.648 INFO  users:fe4867e9364c41b196b60988032fce6c:{"user":"dddd","id":"fe4867e9364c41b196b60988032fce6c","lastUpdated":"2016-11-01T18:31:09.825Z","dateCreated":"2016-11-01T18:31:09.825Z","version":0} 
+21:33:37.477 INFO  create the database: ./server/db/test 
+21:33:37.494 INFO  insert the model: {"user":"dddd","id":"0db5c1b4932d49129f078a80af5e93ec","lastUpdated":"2016-11-01T18:33:37.494Z","dateCreated":"2016-11-01T18:33:37.494Z","version":0} 
+21:33:37.495 INFO  backup the database to ./server/db/users.dat 
+21:33:37.498 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:33:37.748 INFO  find the record with this key: users:0db5c1b4932d49129f078a80af5e93ec 
+21:33:37.755 INFO  users:0db5c1b4932d49129f078a80af5e93ec:{"user":"dddd","id":"0db5c1b4932d49129f078a80af5e93ec","lastUpdated":"2016-11-01T18:33:37.494Z","dateCreated":"2016-11-01T18:33:37.494Z","version":0} 
+21:33:37.759 INFO  users:25028ae9d19741bab2dcad2ab90f1172:{"user":"dddd","id":"25028ae9d19741bab2dcad2ab90f1172","lastUpdated":"2016-11-01T18:30:25.243Z","dateCreated":"2016-11-01T18:30:25.243Z","version":0} 
+21:33:37.760 INFO  users:3c34af6de9f14d4abba5cbcb0f1cedec:{"user":"dddd","id":"3c34af6de9f14d4abba5cbcb0f1cedec","lastUpdated":"2016-11-01T17:24:47.050Z","dateCreated":"2016-11-01T17:24:47.050Z","version":0} 
+21:33:37.761 INFO  users:3f091892ee134a90924ecb7551d94186:{"user":"dddd","id":"3f091892ee134a90924ecb7551d94186","lastUpdated":"2016-11-01T18:24:46.446Z","dateCreated":"2016-11-01T18:24:46.446Z","version":0} 
+21:33:37.762 INFO  users:70f0ffbdd13a4ae798c459bf0e6a9f80:{"user":"dddd","id":"70f0ffbdd13a4ae798c459bf0e6a9f80","lastUpdated":"2016-11-01T18:30:44.693Z","dateCreated":"2016-11-01T18:30:44.693Z","version":0} 
+21:33:37.763 INFO  users:78ac9a756f2a45278c37b52c96a7a5df:{"user":"dddd","id":"78ac9a756f2a45278c37b52c96a7a5df","lastUpdated":"2016-11-01T18:32:10.411Z","dateCreated":"2016-11-01T18:32:10.411Z","version":0} 
+21:33:37.764 INFO  users:8a67cf3a6ec349f7b58d68b79af2c2a2:{"user":"dddd","id":"8a67cf3a6ec349f7b58d68b79af2c2a2","lastUpdated":"2016-11-01T18:32:34.515Z","dateCreated":"2016-11-01T18:32:34.515Z","version":0} 
+21:33:37.765 INFO  users:93be8e0a3a3647f29a280d760eae7096:{"user":"dddd","id":"93be8e0a3a3647f29a280d760eae7096","lastUpdated":"2016-11-01T18:31:19.810Z","dateCreated":"2016-11-01T18:31:19.810Z","version":0} 
+21:33:37.767 INFO  users:9a1cf72bf7904a9ca146f7f7e01143ad:{"user":"dddd","id":"9a1cf72bf7904a9ca146f7f7e01143ad","lastUpdated":"2016-11-01T18:33:08.362Z","dateCreated":"2016-11-01T18:33:08.362Z","version":0} 
+21:33:37.768 INFO  users:a6628e51db9943cca7cebcbf56fc6fd9:{"user":"dddd","id":"a6628e51db9943cca7cebcbf56fc6fd9","lastUpdated":"2016-11-01T18:15:08.963Z","dateCreated":"2016-11-01T18:15:08.963Z","version":0} 
+21:33:37.770 INFO  users:aa65f3ebc57c4322941176cdea4bf4e0:{"user":"dddd","id":"aa65f3ebc57c4322941176cdea4bf4e0","lastUpdated":"2016-11-01T18:30:13.025Z","dateCreated":"2016-11-01T18:30:13.025Z","version":0} 
+21:33:37.771 INFO  users:ad097e762c704d08b9385aafee41111c:{"user":"dddd","id":"ad097e762c704d08b9385aafee41111c","lastUpdated":"2016-11-01T18:29:48.214Z","dateCreated":"2016-11-01T18:29:48.214Z","version":0} 
+21:33:37.774 INFO  users:b67280d8afeb4596b0ebba4f71adbd6d:{"user":"dddd","id":"b67280d8afeb4596b0ebba4f71adbd6d","lastUpdated":"2016-11-01T18:28:17.605Z","dateCreated":"2016-11-01T18:28:17.605Z","version":0} 
+21:33:37.775 INFO  users:c06f4938ea794d259d13174eb894b1d3:{"user":"dddd","id":"c06f4938ea794d259d13174eb894b1d3","lastUpdated":"2016-11-01T18:28:58.087Z","dateCreated":"2016-11-01T18:28:58.087Z","version":0} 
+21:33:37.775 INFO  users:c14502f63fb14b8aa72abf2d14b914b2:{"user":"dddd","id":"c14502f63fb14b8aa72abf2d14b914b2","lastUpdated":"2016-11-01T18:27:59.256Z","dateCreated":"2016-11-01T18:27:59.256Z","version":0} 
+21:33:37.776 INFO  users:cacaeee81c3140cbae9f3bd1b9621447:{"user":"dddd","id":"cacaeee81c3140cbae9f3bd1b9621447","lastUpdated":"2016-11-01T18:26:26.917Z","dateCreated":"2016-11-01T18:26:26.917Z","version":0} 
+21:33:37.778 INFO  users:f9265f0f63df40929a8cffce7490d3b8:{"user":"dddd","id":"f9265f0f63df40929a8cffce7490d3b8","lastUpdated":"2016-11-01T18:32:55.096Z","dateCreated":"2016-11-01T18:32:55.096Z","version":0} 
+21:33:37.781 INFO  users:fe4867e9364c41b196b60988032fce6c:{"user":"dddd","id":"fe4867e9364c41b196b60988032fce6c","lastUpdated":"2016-11-01T18:31:09.825Z","dateCreated":"2016-11-01T18:31:09.825Z","version":0} 
+21:34:27.353 INFO  create the database: ./server/db/test 
+21:34:27.370 INFO  insert the model: {"user":"dddd","id":"852dbbd565a0401da300c82b963da351","lastUpdated":"2016-11-01T18:34:27.370Z","dateCreated":"2016-11-01T18:34:27.370Z","version":0} 
+21:34:27.371 INFO  backup the database to ./server/db/users.dat 
+21:34:27.374 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:34:52.839 INFO  create the database: ./server/db/test 
+21:34:52.855 INFO  insert the model: {"user":"dddd","id":"318a299504274aad9c2f86003951c219","lastUpdated":"2016-11-01T18:34:52.855Z","dateCreated":"2016-11-01T18:34:52.855Z","version":0} 
+21:34:52.856 INFO  backup the database to ./server/db/users.dat 
+21:34:52.859 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:34:52.860 INFO  data = 
+21:34:58.398 INFO  create the database: ./server/db/test 
+21:34:58.414 INFO  insert the model: {"user":"dddd","id":"e73ccd5c788340efbdeaa9af4a51f9fb","lastUpdated":"2016-11-01T18:34:58.414Z","dateCreated":"2016-11-01T18:34:58.414Z","version":0} 
+21:34:58.416 INFO  backup the database to ./server/db/users.dat 
+21:34:58.419 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:34:58.420 INFO  data = 
+21:35:02.225 INFO  create the database: ./server/db/test 
+21:35:02.242 INFO  insert the model: {"user":"dddd","id":"36144f924d4748d5a86920eee5baf222","lastUpdated":"2016-11-01T18:35:02.242Z","dateCreated":"2016-11-01T18:35:02.242Z","version":0} 
+21:35:02.243 INFO  backup the database to ./server/db/users.dat 
+21:35:02.246 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:35:02.246 INFO  data = 
+21:35:02.457 INFO  find the record with this key: users:36144f924d4748d5a86920eee5baf222 
+21:35:02.474 INFO  users:0db5c1b4932d49129f078a80af5e93ec:{"user":"dddd","id":"0db5c1b4932d49129f078a80af5e93ec","lastUpdated":"2016-11-01T18:33:37.494Z","dateCreated":"2016-11-01T18:33:37.494Z","version":0} 
+21:35:02.479 INFO  users:25028ae9d19741bab2dcad2ab90f1172:{"user":"dddd","id":"25028ae9d19741bab2dcad2ab90f1172","lastUpdated":"2016-11-01T18:30:25.243Z","dateCreated":"2016-11-01T18:30:25.243Z","version":0} 
+21:35:02.480 INFO  users:36144f924d4748d5a86920eee5baf222:{"user":"dddd","id":"36144f924d4748d5a86920eee5baf222","lastUpdated":"2016-11-01T18:35:02.242Z","dateCreated":"2016-11-01T18:35:02.242Z","version":0} 
+21:35:02.481 INFO  users:3c34af6de9f14d4abba5cbcb0f1cedec:{"user":"dddd","id":"3c34af6de9f14d4abba5cbcb0f1cedec","lastUpdated":"2016-11-01T17:24:47.050Z","dateCreated":"2016-11-01T17:24:47.050Z","version":0} 
+21:35:02.481 INFO  users:3f091892ee134a90924ecb7551d94186:{"user":"dddd","id":"3f091892ee134a90924ecb7551d94186","lastUpdated":"2016-11-01T18:24:46.446Z","dateCreated":"2016-11-01T18:24:46.446Z","version":0} 
+21:35:02.482 INFO  users:70f0ffbdd13a4ae798c459bf0e6a9f80:{"user":"dddd","id":"70f0ffbdd13a4ae798c459bf0e6a9f80","lastUpdated":"2016-11-01T18:30:44.693Z","dateCreated":"2016-11-01T18:30:44.693Z","version":0} 
+21:35:02.483 INFO  users:78ac9a756f2a45278c37b52c96a7a5df:{"user":"dddd","id":"78ac9a756f2a45278c37b52c96a7a5df","lastUpdated":"2016-11-01T18:32:10.411Z","dateCreated":"2016-11-01T18:32:10.411Z","version":0} 
+21:35:02.484 INFO  users:8a67cf3a6ec349f7b58d68b79af2c2a2:{"user":"dddd","id":"8a67cf3a6ec349f7b58d68b79af2c2a2","lastUpdated":"2016-11-01T18:32:34.515Z","dateCreated":"2016-11-01T18:32:34.515Z","version":0} 
+21:35:02.485 INFO  users:93be8e0a3a3647f29a280d760eae7096:{"user":"dddd","id":"93be8e0a3a3647f29a280d760eae7096","lastUpdated":"2016-11-01T18:31:19.810Z","dateCreated":"2016-11-01T18:31:19.810Z","version":0} 
+21:35:02.487 INFO  users:9a1cf72bf7904a9ca146f7f7e01143ad:{"user":"dddd","id":"9a1cf72bf7904a9ca146f7f7e01143ad","lastUpdated":"2016-11-01T18:33:08.362Z","dateCreated":"2016-11-01T18:33:08.362Z","version":0} 
+21:35:02.489 INFO  users:a6628e51db9943cca7cebcbf56fc6fd9:{"user":"dddd","id":"a6628e51db9943cca7cebcbf56fc6fd9","lastUpdated":"2016-11-01T18:15:08.963Z","dateCreated":"2016-11-01T18:15:08.963Z","version":0} 
+21:35:02.496 INFO  users:aa65f3ebc57c4322941176cdea4bf4e0:{"user":"dddd","id":"aa65f3ebc57c4322941176cdea4bf4e0","lastUpdated":"2016-11-01T18:30:13.025Z","dateCreated":"2016-11-01T18:30:13.025Z","version":0} 
+21:35:02.497 INFO  users:ad097e762c704d08b9385aafee41111c:{"user":"dddd","id":"ad097e762c704d08b9385aafee41111c","lastUpdated":"2016-11-01T18:29:48.214Z","dateCreated":"2016-11-01T18:29:48.214Z","version":0} 
+21:35:02.498 INFO  users:b67280d8afeb4596b0ebba4f71adbd6d:{"user":"dddd","id":"b67280d8afeb4596b0ebba4f71adbd6d","lastUpdated":"2016-11-01T18:28:17.605Z","dateCreated":"2016-11-01T18:28:17.605Z","version":0} 
+21:35:02.499 INFO  users:c06f4938ea794d259d13174eb894b1d3:{"user":"dddd","id":"c06f4938ea794d259d13174eb894b1d3","lastUpdated":"2016-11-01T18:28:58.087Z","dateCreated":"2016-11-01T18:28:58.087Z","version":0} 
+21:35:02.499 INFO  users:c14502f63fb14b8aa72abf2d14b914b2:{"user":"dddd","id":"c14502f63fb14b8aa72abf2d14b914b2","lastUpdated":"2016-11-01T18:27:59.256Z","dateCreated":"2016-11-01T18:27:59.256Z","version":0} 
+21:35:02.501 INFO  users:cacaeee81c3140cbae9f3bd1b9621447:{"user":"dddd","id":"cacaeee81c3140cbae9f3bd1b9621447","lastUpdated":"2016-11-01T18:26:26.917Z","dateCreated":"2016-11-01T18:26:26.917Z","version":0} 
+21:35:02.502 INFO  users:f9265f0f63df40929a8cffce7490d3b8:{"user":"dddd","id":"f9265f0f63df40929a8cffce7490d3b8","lastUpdated":"2016-11-01T18:32:55.096Z","dateCreated":"2016-11-01T18:32:55.096Z","version":0} 
+21:35:02.504 INFO  users:fe4867e9364c41b196b60988032fce6c:{"user":"dddd","id":"fe4867e9364c41b196b60988032fce6c","lastUpdated":"2016-11-01T18:31:09.825Z","dateCreated":"2016-11-01T18:31:09.825Z","version":0} 
+21:39:53.713 INFO  create the database: ./server/db/test 
+21:39:53.730 INFO  insert the model: {"user":"dddd","id":"80597d690b024dcebf33456294f3b631","lastUpdated":"2016-11-01T18:39:53.730Z","dateCreated":"2016-11-01T18:39:53.730Z","version":0} 
+21:39:53.731 INFO  backup the database to ./server/db/users.dat 
+21:39:53.734 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:40:07.848 INFO  create the database: ./server/db/test 
+21:40:07.864 INFO  insert the model: {"user":"dddd","id":"c7bad95ae6d142cd88049181ae4bfc52","lastUpdated":"2016-11-01T18:40:07.864Z","dateCreated":"2016-11-01T18:40:07.864Z","version":0} 
+21:40:07.865 INFO  backup the database to ./server/db/users.dat 
+21:40:07.874 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:40:53.564 INFO  create the database: ./server/db/test 
+21:40:53.582 INFO  insert the model: {"user":"dddd","id":"6391e2e5a7334679b5111331e5375a78","lastUpdated":"2016-11-01T18:40:53.582Z","dateCreated":"2016-11-01T18:40:53.582Z","version":0} 
+21:40:53.583 INFO  backup the database to ./server/db/users.dat 
+21:40:53.585 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:41:48.774 INFO  create the database: ./server/db/test 
+21:41:48.790 INFO  insert the model: {"user":"dddd","id":"2b49079b8c3b42d5b22d5a69984026a2","lastUpdated":"2016-11-01T18:41:48.789Z","dateCreated":"2016-11-01T18:41:48.789Z","version":0} 
+21:41:48.791 INFO  backup the database to ./server/db/users.dat 
+21:41:48.800 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:41:59.073 INFO  create the database: ./server/db/test 
+21:41:59.088 INFO  insert the model: {"user":"dddd","id":"43db0c71cf0a4ca6bcb1735d3cb06c05","lastUpdated":"2016-11-01T18:41:59.088Z","dateCreated":"2016-11-01T18:41:59.088Z","version":0} 
+21:41:59.089 INFO  backup the database to ./server/db/users.dat 
+21:41:59.099 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:44:23.993 INFO  create the database: ./server/db/test 
+21:44:24.009 INFO  insert the model: {"user":"dddd","id":"54723f17aa434ab7a590aff444bc153d","lastUpdated":"2016-11-01T18:44:24.009Z","dateCreated":"2016-11-01T18:44:24.009Z","version":0} 
+21:44:24.010 INFO  backup the database to ./server/db/users.dat 
+21:44:24.013 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:44:24.242 INFO  find the record with this key: users:54723f17aa434ab7a590aff444bc153d 
+21:45:37.037 INFO  create the database: ./server/db/test 
+21:45:37.052 INFO  insert the model: {"user":"dddd","id":"0941d0760b9f45f9a7b58bf7aedf3785","lastUpdated":"2016-11-01T18:45:37.052Z","dateCreated":"2016-11-01T18:45:37.052Z","version":0} 
+21:45:37.053 INFO  backup the database to ./server/db/users.dat 
+21:45:37.056 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:45:37.536 INFO  find the record with this key: users:0941d0760b9f45f9a7b58bf7aedf3785 
+21:46:27.678 INFO  create the database: ./server/db/test 
+21:46:27.693 INFO  insert the model: {"user":"dddd","id":"55ab85676ee741e9870183c06dfc2146","lastUpdated":"2016-11-01T18:46:27.693Z","dateCreated":"2016-11-01T18:46:27.693Z","version":0} 
+21:46:27.694 INFO  backup the database to ./server/db/users.dat 
+21:46:27.697 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:46:27.969 INFO  find the record with this key: users:55ab85676ee741e9870183c06dfc2146 
+21:47:51.576 INFO  create the database: ./server/db/test 
+21:47:51.591 INFO  insert the model: {"user":"dddd","id":"31261f19be6c489ca8d016873e1ced31","lastUpdated":"2016-11-01T18:47:51.591Z","dateCreated":"2016-11-01T18:47:51.591Z","version":0} 
+21:47:51.593 INFO  backup the database to ./server/db/users.dat 
+21:47:51.595 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:47:51.821 INFO  find the record with this key: users:31261f19be6c489ca8d016873e1ced31 
+21:48:18.984 INFO  create the database: ./server/db/test 
+21:48:19.000 INFO  insert the model: {"user":"dddd","id":"8bd350190644480c8cf31271a2693216","lastUpdated":"2016-11-01T18:48:19.000Z","dateCreated":"2016-11-01T18:48:19.000Z","version":0} 
+21:48:19.001 INFO  backup the database to ./server/db/users.dat 
+21:48:19.004 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:48:19.271 INFO  find the record with this key: users:8bd350190644480c8cf31271a2693216 
+21:48:39.716 INFO  create the database: ./server/db/test 
+21:48:39.731 INFO  insert the model: {"user":"dddd","id":"ff6a4908a4f24ce4bcde81f1549e1145","lastUpdated":"2016-11-01T18:48:39.731Z","dateCreated":"2016-11-01T18:48:39.731Z","version":0} 
+21:48:39.733 INFO  backup the database to ./server/db/users.dat 
+21:48:39.735 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:48:39.989 INFO  find the record with this key: users:ff6a4908a4f24ce4bcde81f1549e1145 
+21:48:56.320 INFO  create the database: ./server/db/test 
+21:48:56.336 INFO  insert the model: {"user":"dddd","id":"2cca9a93f6cf40cb8471b2eb0d6236bc","lastUpdated":"2016-11-01T18:48:56.336Z","dateCreated":"2016-11-01T18:48:56.336Z","version":0} 
+21:48:56.337 INFO  backup the database to ./server/db/users.dat 
+21:48:56.340 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:48:56.618 INFO  find the record with this key: users:2cca9a93f6cf40cb8471b2eb0d6236bc 
+21:49:56.181 INFO  create the database: ./server/db/test 
+21:49:56.197 INFO  insert the model: {"user":"dddd","id":"380cca8d35c14e81aad06655e89f6885","lastUpdated":"2016-11-01T18:49:56.197Z","dateCreated":"2016-11-01T18:49:56.197Z","version":0} 
+21:49:56.198 INFO  backup the database to ./server/db/users.dat 
+21:49:56.201 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:49:56.447 INFO  find the record with this key: users:380cca8d35c14e81aad06655e89f6885 
+21:50:07.344 INFO  create the database: ./server/db/test 
+21:50:07.359 INFO  insert the model: {"user":"dddd","id":"686fb570c5584716933dfb254cbc4806","lastUpdated":"2016-11-01T18:50:07.359Z","dateCreated":"2016-11-01T18:50:07.359Z","version":0} 
+21:50:07.361 INFO  backup the database to ./server/db/users.dat 
+21:50:07.363 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:50:07.641 INFO  find the record with this key: users:686fb570c5584716933dfb254cbc4806 
+21:50:47.818 INFO  create the database: ./server/db/test 
+21:50:47.834 INFO  insert the model: {"user":"dddd","id":"ca68ec82bc3e4860bb9e7e6ef165f848","lastUpdated":"2016-11-01T18:50:47.834Z","dateCreated":"2016-11-01T18:50:47.834Z","version":0} 
+21:50:47.835 INFO  backup the database to ./server/db/users.dat 
+21:50:47.838 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+21:50:48.028 INFO  find the record with this key: users:ca68ec82bc3e4860bb9e7e6ef165f848 
+21:51:03.097 INFO  create the database: ./server/db/test 
+21:51:03.113 INFO  insert the model: {"user":"dddd","id":"fa423b830bf5404b98d18538752bb37c","lastUpdated":"2016-11-01T18:51:03.112Z","dateCreated":"2016-11-01T18:51:03.112Z","version":0} 
+21:51:03.114 INFO  backup the database to ./server/db/users.dat 
+21:51:03.123 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:17:07.299 INFO  create the database: ./server/db/test 
+08:17:07.471 INFO  restore database from ./server/db/test.dat 
+08:17:07.563 INFO  insert the batch, rows: 9 
+08:17:34.664 INFO  create the database: ./server/db/neffes 
+08:23:30.265 INFO  create the database: ./server/db/neffes 
+08:25:14.674 INFO  create the database: ./server/db/neffes 
+08:25:14.690 INFO  insert the model: {"user":"dddd","id":"45a724625d1e4bf2ac835efc4867e2d9","lastUpdated":"2016-11-02T05:25:14.690Z","dateCreated":"2016-11-02T05:25:14.690Z","version":0} 
+08:25:14.691 INFO  backup the database to ./server/db/users.dat 
+08:25:14.694 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:25:14.860 INFO  find the record with this key: users:45a724625d1e4bf2ac835efc4867e2d9 
+08:31:11.854 INFO  create the database: ./server/db/neffes 
+08:31:11.870 INFO  insert the model: {"user":"dddd","id":"0bb2646a9fad41e59f2bd0e2b0de641e","lastUpdated":"2016-11-02T05:31:11.870Z","dateCreated":"2016-11-02T05:31:11.870Z","version":0} 
+08:31:11.871 INFO  backup the database to ./server/db/users.dat 
+08:31:11.874 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:31:12.096 INFO  find the record with this key: users:0bb2646a9fad41e59f2bd0e2b0de641e 
+08:31:32.876 INFO  create the database: ./server/db/neffes 
+08:31:32.892 INFO  insert the model: {"user":"dddd","id":"bdf668da6ebf4f9988de5ccc749711a4","lastUpdated":"2016-11-02T05:31:32.892Z","dateCreated":"2016-11-02T05:31:32.892Z","version":0} 
+08:31:32.893 INFO  backup the database to ./server/db/users.dat 
+08:31:32.896 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:31:33.148 INFO  find the record with this key: users:bdf668da6ebf4f9988de5ccc749711a4 
+08:31:52.993 INFO  create the database: ./server/db/neffes 
+08:31:53.009 INFO  insert the model: {"user":"dddd","id":"f68a26ee4fbc413497262696f3ee6d55","lastUpdated":"2016-11-02T05:31:53.009Z","dateCreated":"2016-11-02T05:31:53.009Z","version":0} 
+08:31:53.010 INFO  backup the database to ./server/db/users.dat 
+08:31:53.013 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:31:53.290 INFO  find the record with this key: users:f68a26ee4fbc413497262696f3ee6d55 
+08:35:44.273 INFO  create the database: ./server/db/neffes 
+08:35:44.290 INFO  insert the model: {"user":"dddd","id":"b15b37eacda446118af8b2f3fcb232db","lastUpdated":"2016-11-02T05:35:44.290Z","dateCreated":"2016-11-02T05:35:44.290Z","version":0} 
+08:35:44.291 INFO  backup the database to ./server/db/users.dat 
+08:35:44.294 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:35:44.522 INFO  find the record with this key: users:b15b37eacda446118af8b2f3fcb232db 
+08:36:31.652 INFO  create the database: ./server/db/neffes 
+08:36:31.668 INFO  insert the model: {"user":"dddd","id":"a28729c0a0004d45ad60ae1c9b9640b6","lastUpdated":"2016-11-02T05:36:31.668Z","dateCreated":"2016-11-02T05:36:31.668Z","version":0} 
+08:36:31.669 INFO  backup the database to ./server/db/users.dat 
+08:36:31.672 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:36:31.903 INFO  find the record with this key: users:a28729c0a0004d45ad60ae1c9b9640b6 
+08:37:27.487 INFO  create the database: ./server/db/neffes 
+08:37:27.503 INFO  insert the model: {"user":"dddd","id":"82e244b13972407a9366549f900af0b6","lastUpdated":"2016-11-02T05:37:27.503Z","dateCreated":"2016-11-02T05:37:27.503Z","version":0} 
+08:37:27.504 INFO  backup the database to ./server/db/users.dat 
+08:37:27.507 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:37:27.751 INFO  find the record with this key: users:82e244b13972407a9366549f900af0b6 
+08:38:45.773 INFO  create the database: ./server/db/neffes 
+08:38:45.789 INFO  insert the model: {"user":"dddd","id":"17fd5010fcfc4c25b41c9468fdc908a7","lastUpdated":"2016-11-02T05:38:45.789Z","dateCreated":"2016-11-02T05:38:45.789Z","version":0} 
+08:38:45.790 INFO  backup the database to ./server/db/users.dat 
+08:38:45.793 INFO  query the database with params: {} 
+08:38:46.014 INFO  find the record with this key: users:17fd5010fcfc4c25b41c9468fdc908a7 
+08:41:54.497 INFO  create the database: ./server/db/neffes 
+08:41:54.515 INFO  insert the model: {"user":"dddd","id":"2573753a3a2949d3aa991f6255ac0ec8","lastUpdated":"2016-11-02T05:41:54.515Z","dateCreated":"2016-11-02T05:41:54.515Z","version":0} 
+08:41:54.516 INFO  backup the database to ./server/db/users.dat 
+08:41:54.519 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:41:55.078 INFO  find the record with this key: users:2573753a3a2949d3aa991f6255ac0ec8 
+08:43:00.681 INFO  create the database: ./server/db/neffes 
+08:43:00.698 INFO  insert the model: {"user":"dddd","id":"0948acf4c88348a0982f45709102b9aa","lastUpdated":"2016-11-02T05:43:00.697Z","dateCreated":"2016-11-02T05:43:00.697Z","version":0} 
+08:43:00.699 INFO  backup the database to ./server/db/users.dat 
+08:43:00.701 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:43:00.952 INFO  find the record with this key: users:0948acf4c88348a0982f45709102b9aa 
+08:43:33.096 INFO  create the database: ./server/db/neffes 
+08:43:33.112 INFO  insert the model: {"user":"dddd","id":"599d5b0343284f6a915ad8b03910326b","lastUpdated":"2016-11-02T05:43:33.112Z","dateCreated":"2016-11-02T05:43:33.112Z","version":0} 
+08:43:33.113 INFO  backup the database to ./server/db/users.dat 
+08:43:33.116 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:43:33.345 INFO  find the record with this key: users:599d5b0343284f6a915ad8b03910326b 
+08:44:47.398 INFO  create the database: ./server/db/neffes 
+08:44:47.414 INFO  insert the model: {"user":"dddd","id":"46469440af2f43938a3187bf2121c09a","lastUpdated":"2016-11-02T05:44:47.414Z","dateCreated":"2016-11-02T05:44:47.414Z","version":0} 
+08:44:47.416 INFO  backup the database to ./server/db/users.dat 
+08:44:47.418 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:44:47.681 INFO  find the record with this key: users:46469440af2f43938a3187bf2121c09a 
+08:53:58.248 INFO  create the database: ./server/db/neffes 
+08:53:58.263 INFO  calculate stats 
+08:53:58.283 INFO  insert the model: {"user":"dddd","lastUpdated":"2016-11-02T05:53:58.283Z","dateCreated":"2016-11-02T05:53:58.283Z","version":0} 
+08:53:58.284 INFO  backup the database to ./server/db/users.dat 
+08:53:58.285 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:53:58.476 INFO  find the record with this key: users:f1f210b8bb064549a57e8308842d955b 
+08:55:03.126 INFO  create the database: ./server/db/neffes 
+08:55:03.141 INFO  calculate stats 
+08:55:03.160 INFO  insert the model: {"user":"dddd","lastUpdated":"2016-11-02T05:55:03.160Z","dateCreated":"2016-11-02T05:55:03.160Z","version":0} 
+08:55:03.161 INFO  backup the database to ./server/db/users.dat 
+08:55:03.163 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:55:03.370 INFO  find the record with this key: users:68d41414891840478666562ea15f761f 
+08:56:51.490 INFO  create the database: ./server/db/neffes 
+08:56:51.506 INFO  calculate stats 
+08:56:51.508 INFO  insert the model: {"user":"dddd","id":1,"lastUpdated":"2016-11-02T05:56:51.508Z","dateCreated":"2016-11-02T05:56:51.508Z","version":0} 
+08:56:51.509 INFO  backup the database to ./server/db/users.dat 
+08:56:51.511 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:56:51.704 INFO  find the record with this key: users:1 
+08:57:04.748 INFO  create the database: ./server/db/neffes 
+08:57:04.765 INFO  calculate stats 
+08:57:04.767 INFO  insert the model: {"user":"dddd","id":1,"lastUpdated":"2016-11-02T05:57:04.767Z","dateCreated":"2016-11-02T05:57:04.767Z","version":0} 
+08:57:04.768 INFO  backup the database to ./server/db/users.dat 
+08:57:04.769 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:57:05.033 INFO  find the record with this key: users:1 
+08:57:52.777 INFO  create the database: ./server/db/neffes 
+08:57:52.793 INFO  calculate stats 
+08:57:52.795 INFO  insert the model: {"user":"dddd","id":1,"lastUpdated":"2016-11-02T05:57:52.795Z","dateCreated":"2016-11-02T05:57:52.795Z","version":0} 
+08:57:52.796 INFO  backup the database to ./server/db/users.dat 
+08:57:52.798 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:57:53.029 INFO  find the record with this key: users:1 
+08:58:24.401 INFO  create the database: ./server/db/neffes 
+08:58:24.417 INFO  calculate stats 
+08:58:24.420 INFO  insert the model: {"user":"dddd","id":1,"lastUpdated":"2016-11-02T05:58:24.419Z","dateCreated":"2016-11-02T05:58:24.419Z","version":0} 
+08:58:24.420 INFO  backup the database to ./server/db/users.dat 
+08:58:24.422 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:58:24.658 INFO  find the record with this key: users:1 
+08:58:33.953 INFO  create the database: ./server/db/neffes 
+08:58:33.969 INFO  calculate stats 
+08:58:33.971 INFO  insert the model: {"user":"dddd","id":1,"lastUpdated":"2016-11-02T05:58:33.971Z","dateCreated":"2016-11-02T05:58:33.971Z","version":0} 
+08:58:33.972 INFO  backup the database to ./server/db/users.dat 
+08:58:33.974 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:58:34.264 INFO  find the record with this key: users:1 
+08:58:46.788 INFO  create the database: ./server/db/neffes 
+08:58:46.804 INFO  calculate stats 
+08:58:46.807 INFO  insert the model: {"user":"dddd","id":1,"lastUpdated":"2016-11-02T05:58:46.807Z","dateCreated":"2016-11-02T05:58:46.807Z","version":0} 
+08:58:46.808 INFO  backup the database to ./server/db/users.dat 
+08:58:46.809 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:58:47.096 INFO  find the record with this key: users:1 
+08:58:55.185 INFO  create the database: ./server/db/neffes 
+08:58:55.201 INFO  calculate stats 
+08:58:55.203 INFO  insert the model: {"user":"dddd","id":1,"lastUpdated":"2016-11-02T05:58:55.203Z","dateCreated":"2016-11-02T05:58:55.203Z","version":0} 
+08:58:55.204 INFO  backup the database to ./server/db/users.dat 
+08:58:55.205 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+08:58:55.465 INFO  find the record with this key: users:1 
+09:00:07.594 INFO  create the database: ./server/db/neffes 
+09:00:07.609 INFO  calculate stats 
+09:00:07.612 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+09:00:07.889 INFO  insert the model: {"user":"dddd","id":15,"lastUpdated":"2016-11-02T06:00:07.889Z","dateCreated":"2016-11-02T06:00:07.889Z","version":0} 
+09:00:07.890 INFO  backup the database to ./server/db/users.dat 
+09:00:07.893 INFO  find the record with this key: users:15 
+09:00:25.952 INFO  create the database: ./server/db/neffes 
+09:00:25.968 INFO  calculate stats 
+09:00:25.971 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+09:00:26.213 INFO  insert the model: {"user":"dddd","id":16,"lastUpdated":"2016-11-02T06:00:26.213Z","dateCreated":"2016-11-02T06:00:26.213Z","version":0} 
+09:00:26.215 INFO  backup the database to ./server/db/users.dat 
+09:00:26.221 INFO  find the record with this key: users:16 
+09:01:32.417 INFO  create the database: ./server/db/neffes 
+09:01:32.432 INFO  calculate stats 
+09:01:32.435 INFO  query the database with params: {"start":"users:","end":"users:~"} 
+09:01:32.737 INFO  insert the model: {"user":"dddd","id":17,"lastUpdated":"2016-11-02T06:01:32.737Z","dateCreated":"2016-11-02T06:01:32.737Z","version":0} 
+09:01:32.738 INFO  backup the database to ./server/db/users.dat 
+09:01:32.741 INFO  find the record with this key: users:17 
+08:19:08.027 INFO  create the database: ./server/db/DB 
+08:19:08.042 INFO  create the database: ./server/db/Lut 
+08:19:08.043 INFO  create the database: ./server/db/Char 
+08:19:08.043 INFO  create the database: ./server/db/Action 
+08:19:08.043 INFO  create the database: ./server/db/Event 
+08:19:08.044 INFO  create the database: ./server/db/Punish 
+08:19:08.044 INFO  create the database: ./server/db/model3D 

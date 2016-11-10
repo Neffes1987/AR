@@ -36,14 +36,17 @@ module.exports={
 		extensions:['','.js','.jsx']
 	},
 	output:{
-		path:__dirname+'/dist',
+		path:path.resolve('./dist'),
 		filename: '[name].js',
-        publicPath: '/',
+        publicPath:'/',
         library: '[name]'
 	},
 	devServer:{
 		contentBase:'./dist',
-		hot:true
+		hot:true,
+		historyApiFallback:{
+            index:'index.html'
+        }
 	},
 	plugins:[
 		new webpack.HotModuleReplacementPlugin(),

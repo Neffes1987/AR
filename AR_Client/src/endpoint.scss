@@ -3,7 +3,17 @@ $active_bg: #286090;
 $active_font: #FFF;
 $image_hover_bg: rgba(0,0,0,0.5);
 
+.check-block{
+	position:relative;
+	margin-right:20px;
+	span{padding-right: 26px!important; border: 1px solid #ccc; width: 200px; display: inline-block; border:1px solid grey!important; border-radius:4px!important}
+	input{position: absolute;bottom: 0px;right: 20px;top: 0px;margin: auto;}
 
+}
+.icon_class{width:40px;height:40px;}
+.abs_icon{float: right;width: 80px;height: 80px;}
+.text-vertical td{vertical-align:middle!important}
+.text-vertical td input, .text-vertical td textarea{@extend .form-control}
 .input-group .Select.is-open{z-index:100}
 .input-group .input,.input-group .Select{z-index:10}
 .input-group {
@@ -74,7 +84,71 @@ div.blurWithName{
     background-color: white;
 }
 
-input[type='button']{
+input[type='button'],input[type='submit']{
 	@extend .btn;
 	@extend .btn-default;
 	}
+
+table{
+	@extend .table;
+	@extend .table-hover;
+	@extend .table-bordered;
+	@extend .text-center;
+	td{vertical-align:middle!important;}
+}
+.chatBox{
+	word-wrap: break-word;
+    word-break: break-all;
+    height:500px;
+    overflow-y:scroll;
+	.messageItem{
+		float: left;
+		padding: 2px 4px 4px 4px;
+		margin-top: -3px;
+		border: 1px solid #cac5c5;
+		box-sizing: border-box;
+		border-radius: 4px;
+		box-shadow: 2px 2px 5px 0px;
+		margin: 12px;
+		.messageName{
+			padding: 2px;
+			letter-spacing: 1px;
+			font-weight: bold;
+			display: block;
+			a{
+				text-decoration:none;
+				color:inherit;
+				&:hover{text-decoration:underline;}
+			}
+		}
+		.messageText{
+			padding: 2px;
+			display: block;
+			font-style: italic;
+		}
+		.messageTime{
+			@extend .small;
+			@extend .pull-right;
+		}
+	}
+}
+.alert{
+	position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    margin: auto;
+    width: 40%;
+    height: 200px;
+    z-index: 100;
+    .panel{
+		position: relative;
+		width:100%;
+	}
+	.close{
+		position: absolute;
+		top: 7px;
+		right: 14px;
+	}
+}

@@ -1,12 +1,15 @@
 //Wrapper.jsx
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
+import {Link} from 'react-router'
 
 export const Wrapper = React.createClass({
 	mixins:[PureRenderMixin],
 	render(){
 		return(
 			<div className='innrer'>
+				<h3>gHBDTN</h3>
+				<Link to={'admin/'}  activeClassName='active'>admin</Link>
 				{this.props.children}
 			</div>
 		)

@@ -9,8 +9,12 @@ export default React.createClass({
 	render(){
 		//const actions = this.props.actions?this.props.actions:{}
 		const events = this.props.events?this.props.events:{};
+		//const eventsLen = this.props.eventsLen?this.props.eventsLen:0;
 		const filterValue = this.props.filterValue?this.props.filterValue:'';
+		const eventTemplate = this.props.eventTemplate?this.props.eventTemplate:'';
 		const eventsInputChange = this.props.eventsInputChange?this.props.eventsInputChange:'';
+		const eventsGChange = this.props.eventsGChange?this.props.eventsGChange:false;
+
 		let   eventsArray = [];
 		for(let key in events){
 			if(filterValue!='' && events[key].name.toLowerCase().indexOf(filterValue.toLowerCase())==-1) continue;
@@ -31,7 +35,7 @@ export default React.createClass({
 						<td>
 							<div className='button-group'>
 								<input type='button' value='Редактировать' onClick={()=>{eventsInputChange(['newEvent'],events[key].id)}}/>
-								<input type='button' value='Убрать'/>
+								<input type='button' value='Убрать' id={key} onClick={(e)=>{eventsGChange(['eventsList'],'delete',e.target.id)}}/>
 							</div>
 						</td>
 				</tr>
@@ -56,7 +60,10 @@ export default React.createClass({
 						{eventsArray}
 					</tbody>
 				</table>
-				<input type='button' value='Добавить новый' onClick={()=>{eventsInputChange(['newEvent'],'new')}}/>
+				<input type='button' value='Добавить новый' onClick={()=>{
+					eventsGChange(['eventsList'],'add',eventTemplate);
+					eventsInputChange(['newEvent'],'new');
+				}}/>
 			</div>
 		)
 	}

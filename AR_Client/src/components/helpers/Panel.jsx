@@ -1,21 +1,21 @@
 //Panel.jsx
-
 import React from 'react'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
-
 export default React.createClass({
 	mixins:[PureRenderMixin],
 	render(){
-		const {children,title} = this.props;
+		const children  = this.props.children?this.props.children:'';
+		const title  = this.props.title?this.props.title:'';
+		const bsClass = this.props.bsClass?this.props.bsClass:'primary';
+		console.log('bsClass',bsClass)
 		return(
-			<div className='panel panel-primary'>
+			<div className={'panel panel-'+bsClass}>
 				<div className='panel-heading'>
 					<h3 className='panel-title'>{title}</h3>
 				</div>
 				<div className='panel-body'>
 					{children}
 				</div>
-
 			</div>
 
 		)

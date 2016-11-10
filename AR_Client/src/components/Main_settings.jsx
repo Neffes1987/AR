@@ -26,7 +26,7 @@ export default React.createClass({
 					<ul className='list-group'>
 						<li className='list-group-item'>
 							<div className='form-group'>
-								<label for='presentation'>Вводная для проекта</label>
+								<label htmlFor='presentation'>Вводная для проекта</label>
 								<textarea id='presentation' rows='15' className='form-control'></textarea>
 							</div>
 						</li>

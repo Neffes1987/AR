@@ -6,6 +6,7 @@ export default React.createClass({
 	mixins:[PureRenderMixin],
 	render(){
 		const iValue=this.props.iValue!=undefined?this.props.iValue:'';
+		const style=this.props.style!=undefined?this.props.style:{};
 		const label=this.props.label!=undefined?this.props.label:'';
 		const func=this.props.func!=undefined?this.props.func:'';
 		const type=this.props.type?this.props.type:'text';
@@ -14,7 +15,7 @@ export default React.createClass({
 		const button = this.props.button?this.props.button:false
 		const buttonClick = this.props.buttonClick?this.props.buttonClick:false
 		return(
-				<div className='input-group'>
+				<div className='input-group' style={style}>
 					<span className='input-group-addon'>{label}</span>
 					<input type={type} className='form-control' disabled={disabled} placeholder={placeholder} value={iValue} onChange={(e)=>{func(e.target.value)}}/>
 					{button?<div className='input-group-btn'>
