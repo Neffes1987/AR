@@ -5,15 +5,18 @@ import {logTitle} from '../vars'
 import PureRenderMixin from 'react-addons-pure-render-mixin'
 
 export default React.createClass({
-	mixins:[PureRenderMixin],
-	render(){
-		//const{}=this.props
-		return(
-			<div className='Log'>
-				<Panel title={logTitle}>
+    mixins:[PureRenderMixin],
+    render(){
+        //const{}=this.props
+        return(
+            <div className='Log'>
+                <Panel title={logTitle}>
 
-				</Panel>
-			</div>
-		)
-	}
+                </Panel>
+            </div>
+        )
+    },
+    componentWillMount() {
+        this.props.getRemoteData('REMOTE_LOG');
+    }
 })

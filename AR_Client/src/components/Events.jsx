@@ -10,27 +10,27 @@ import EventsEdit from './subComponents/eventsEdit'
 import { connect } from 'react-redux'
 
 export const Events =  React.createClass({
-	mixins:[PureRenderMixin],
-	render(){
-		const newEvent = this.props.newEvent?this.props.newEvent:0;
-		return(
-			<div className='Events'>
-				<Panel title={eventTitle}>
-					{newEvent?<EventsEdit {...this.props}/>:<EventsTable {...this.props}/>}
-				</Panel>
-			</div>
-		)
-	}
+    mixins:[PureRenderMixin],
+    render(){
+        const newEvent = this.props.newEvent?this.props.newEvent:0;
+        return(
+            <div className='Events'>
+                <Panel title={eventTitle}>
+                    {newEvent?<EventsEdit {...this.props}/>:<EventsTable {...this.props}/>}
+                </Panel>
+            </div>
+        )
+    }
 })
 
 const mapStateToProps = function(store) {
     return {
-		eventsLen:store.events.getIn(['eventsList']).size,
-		events:store.events.getIn(['eventsList']).toJS(),
-		newEvent:store.events.getIn(['newEvent']),
-		eventTemplate:store.events.getIn(['eventTemplate']),
-		filterValue:store.events.getIn(['filterValue']),
-		actions:store.actions.getIn(['list']).toJS()
+        eventsLen:store.events.getIn(['eventsList']).size,
+        events:store.events.getIn(['eventsList']).toJS(),
+        newEvent:store.events.getIn(['newEvent']),
+        eventTemplate:store.events.getIn(['eventTemplate']),
+        filterValue:store.events.getIn(['filterValue']),
+        actions:store.actions.getIn(['list']).toJS()
     }
 };
 

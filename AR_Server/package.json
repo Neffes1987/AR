@@ -28,6 +28,10 @@
   "dependencies": {
     "file-exists": "^2.0.0",
     "immutable": "^3.8.1",
+    "lodash": "^4.17.4",
+    "md5": "^2.2.1",
+    "mongodb": "^2.2.20",
+    "mongoose": "^4.7.6",
     "redux": "^3.5.2",
     "simple-node-db": "^0.90.37",
     "socket.io": "^1.4.8"

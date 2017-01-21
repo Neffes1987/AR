@@ -2,12 +2,13 @@
 import React from 'react'
 import ReactDom from 'react-dom'
 import {Router,Route,IndexRoute,browserHistory} from 'react-router'
+import {routerMiddleware} from 'react-router-redux'
 import {createStore,applyMiddleware} from 'redux'
 import {Provider} from 'react-redux'
+import {initBlock} from './core'
 import createLogger from 'redux-logger'
-//import io from 'socket.io-client'
-//import {setState} from './action_creator'
-//import remoteActionMiddleware from './remote_action_middleware'
+import io from 'socket.io-client'
+import remoteActionMiddleware from './remote_action_middleware'
 import App from './components/app'
 import reducer from '../reducer/rootReduce'
 import {Main} from './components/main'
@@ -22,19 +23,18 @@ import BD from './components/BD'
 import Intro from './components/Intro'
 import loginPage from './components/loginPage'
 
+const middleware = routerMiddleware(browserHistory)
 const logger = createLogger();
+const socket =io.connect('http://localhost:8090');
 
-
-//const socket =io.connect('http://localhost:8090');
-
-//const store = createStore(reducer,applyMiddleware(logger,remoteActionMiddleware(socket)));
-const store = createStore(reducer,applyMiddleware(logger));
-//socket.on('state',(state)=>{console.log('FROM_SERVER',state);store.dispatch(setState(state))});
+const store = createStore(reducer,applyMiddleware(logger,middleware,remoteActionMiddleware(socket)));
+//const store = createStore(reducer,applyMiddleware(logger));
+socket.on('Remote_data',(data)=>{initBlock(data,store.dispatch)});
 function checkLogin(store,nextState, replace) {
 	const state = store.getState();
-	console.log('state',state);
 	const access = state.autorization.getIn(['data','access'])?state.autorization.getIn(['data','access']):'';
-	if (access== '')replace('/');
+    console.log('access',access);
+    if (access== '')replace('/');
 }
 const routes = <Route path='/' component={App}>
 				<IndexRoute component={loginPage}/>
@@ -58,5 +58,3 @@ ReactDom.render(
 			{routes}
 		</Router>
 	</Provider>,document.getElementById('app'));
-
-

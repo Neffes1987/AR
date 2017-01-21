@@ -15,17 +15,17 @@ import autorization from './autorization'
 
 
 const rootReducer = combineReducers({
-	actions,
-	lut,
-	punish,
-	actionTypes,
-	model3D,
-	events,
-	char,
-	db,
-	alert,
-	autorization,
-	routing:routerReducer
+    actions,
+    lut,
+    punish,
+    actionTypes,
+    model3D,
+    events,
+    char,
+    db,
+    alert,
+    autorization,
+    routerReducer
 });
 
 export default rootReducer

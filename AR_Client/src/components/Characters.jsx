@@ -21,7 +21,10 @@ export const char = React.createClass({
 				</Panel>
 			</div>
 		)
-	}
+	},
+    componentDidMount() {
+        this.props.getRemoteData('REMOTE_CHARS');
+    }
 })
 
 

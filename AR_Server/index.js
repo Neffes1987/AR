@@ -1,27 +1,10 @@
 //index.js
-import MakeStore from './server/store'
 import startServer from './server/ioServer'
-//import {db_init,db_insert,getRows} from './server/bd_core'
-//let UserDB = db_init('DB');
-//let LutDB = db_init('Lut');
-//let CharDB = db_init('Char');
-//let ActionDB = db_init('Action');
-//let EventDB = db_init('Event');
-//let PunishDB = db_init('Punish');
-//let Model3D_DB = db_init('model3D');
-
-//function eachRow(key,value){
-	//console.log(JSON.parse( value ))
-//}
+import {dbc} from './server/bd_core'
 
 
-//const data = {user:'dddd',id:1};
-//const key = db_insert(db,'users',data);
-//getRows(db,'users',eachRow);
-
-
-export const store = MakeStore();
-store.dispatch({type:'SET_UP_STORE',store:require('./json/test.json')});
-//store.dispatch({type:'NEXT'});
-
-//startServer(store);
+const dbName='local';
+const url = 'mongodb://root:1111@localhost:27017/admin';
+const callback = (db)=>{startServer(db,8090)}
+let DBClass = new dbc(callback,url,dbName)
+DBClass.connect();

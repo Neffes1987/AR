@@ -9,27 +9,27 @@ import DBTable from './subComponents/userTable'
 import EditUser from './subComponents/editUser'
 
 export const DB_view = React.createClass({
-	mixins:[PureRenderMixin],
-	render(){
-		const editItem = this.props.editItem;
-		return(
-			<div className='BD'>
-				<Panel title={BDTitle}>
-					{editItem=='0'?<DBTable {...this.props}/>:<EditUser {...this.props}/>}
-				</Panel>
-			</div>
-		)
-	}
+    mixins:[PureRenderMixin],
+    render(){
+        const editItem = this.props.editItem;
+        return(
+            <div className='BD'>
+                <Panel title={BDTitle}>
+                    {editItem=='0'?<DBTable {...this.props}/>:<EditUser {...this.props}/>}
+                </Panel>
+            </div>
+        )
+    }
 })
 
 
 const mapStateToProps = function(store) {
     return {
-		DBList: store.db.getIn(['DBList']).toJS(),
-		roles: store.db.getIn(['roles']).toJS(),
-		charList: store.char.getIn(['charList']).toJS(),
-		lutList: store.lut.getIn(['lutList']).toJS(),
-		editItem: store.db.getIn(['editItem']),
+        DBList: store.db.getIn(['DBList']).toJS(),
+        roles: store.db.getIn(['roles']).toJS(),
+        charList: store.char.getIn(['charList']).toJS(),
+        lutList: store.lut.getIn(['lutList']).toJS(),
+        editItem: store.db.getIn(['editItem']),
     }
 };
 

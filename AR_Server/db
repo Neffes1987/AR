@@ -1,3 +1,0 @@
-09:15:10.457 INFO  create the database: ./server/db/test 
-09:15:10.474 INFO  insert the model: {"id":"12345","name":"Sam Sammyson","email":"sam@sammyson.com","status":"active","lastUpdated":"2016-11-01T06:15:10.474Z","dateCreated":"2016-11-01T06:15:10.474Z","version":0} 
-09:15:10.475 INFO  find the record with this key: user 

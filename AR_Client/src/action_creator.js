@@ -1,4 +1,10 @@
 //action_creator.js
+//----------------------------------------INIT BLOCKS -------------------------------------------
+
+export function setDataForBlock(type,value) {return {type,value}}
+export function getRemoteData(type,id) {return {type,id,meta:'remote'}}
+
+//-----------------------------------------------------------------------------------------------
 
 export function actionInputChange(path,value) {return {type:'INPUT_CHANGE',value,path}}
 
@@ -53,7 +59,9 @@ export function ChatListChange(path,act,value) {return {type:'CHAT_ARRAY_CHANGE'
 export function ChatGChange(path,act,value) {return {type:'CHAT_GROUP_CHANGE',value,path,act}}
 
 //-----------------------------------------------------------------------------------------------
-
+export function Autorization(name,pass,meta) {return {type:'REMOTE_AUTORIZATION',name,pass,meta}}
+export function Remote_Autorization_Answer(value) {
+    return {type:'SERVER_SESSION',path:['data','access'],value}}
 //-----------------------------------------------------------------------------------------------
 
 export function AlertChange(path,value) {return {type:'ALERT_INPUT_CHANGE',value,path}}
@@ -63,5 +71,3 @@ export function AlertChange(path,value) {return {type:'ALERT_INPUT_CHANGE',value
 
 export function SingInChange(path,value) {return {type:'SINGIN_INPUT_CHANGE',value,path}}
 //-----------------------------------------------------------------------------------------------
-
-

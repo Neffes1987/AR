@@ -15,6 +15,7 @@ let initialState = Map({
 function singIn(state = initialState, action) {
      switch (action.type) {
 		case 'SINGIN_INPUT_CHANGE': return insertInMap(state,action.path,action.value);
+		case 'SERVER_SESSION': return insertInMap(state,action.path,action.value);
         default: return state
     }
 }
