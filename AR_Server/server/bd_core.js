@@ -68,26 +68,34 @@ export class dbc{
 
         }
     }
+    insert(data,colName,options){
+        const collection = _this.dbHandle.collection(colName);
+        const callback = _this.callback;
+        collection.insertMany(data,options,function(err, r) {
+            if (err){
+                console.log(err);
+                callback(err);
+            }
+            if(r.insertedCount == data.length) callback('success');
+        })
+    }
+    update (source,colName,data,param){
+        //param =
+            //$set - добавление поля в документ
+            //$push - добавления элемента в массив
+            //$inc - инкремент(>0),декремент(<0) параметра
+            //Если параметр пустой то перезапись всего поля
+        let replacement = {}
+        if(param) replacement = {[param]:data}
+        else replacement = data
+        const collection = _this.dbHandle.collection(colName);
+        const callback = _this.callback;
+        collection.updateMany(source,replacement,{upsert:true,w:1},function(err, r) {
+            if (err){
+                console.log(err);
+                callback(err)
+            }
+            else callback('success')
+        })
+    }
 }
-
-
-export function insert(name,query,err,db){
-    //name = имя коллекции
-    //query = массив объектов для добавления
-    if (err) {console.log(err);return false;}
-    const collect = db.collection(name);
-    collect.insertMany(query,{w:1},(err,r)=>{
-        if(err || r.insertedCount ==query.length) db.close();
-    })
-}
-export function update(selector,query,forOne,err,db){
-    // selector = объект, с параметром по которому проихводится поиск в документе
-    // query = данные для замены,объект
-    // forOne = Обновить один документ(1) или все по селектору(0)
-    if (err) {console.log(err);return false;}
-    const collect = db.collection(name);
-    if (forOne) collection.updateOne(selector, query);
-    else collection.updateMany(selector, query, {w:1,multi:true}).then((r)=>{
-        db.close();
-    })
-  }
