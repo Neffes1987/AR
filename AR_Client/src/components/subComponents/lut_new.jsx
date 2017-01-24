@@ -14,15 +14,12 @@ export default React.createClass({
         const img=lutItem.img?lutItem.img:'';
         const charList=this.props.charList?this.props.charList:{};
         const lutInputChange=this.props.lutInputChange?this.props.lutInputChange:false;
-        let charArr=[],charObj={},key;
-        for(key in charList){
-            const id = charList[key].id;
-            charObj[id]=charList[key];
-        }
-        for (key in charObj){
+        const saveToRemoteServer=this.props.saveToRemoteServer;
+        let charArr=[],key;
+        for (key in charList){
             let value = lutItemCList[key]?lutItemCList[key]:'';
             charArr.push(<ItemGroup key={key}
-                label={charObj[key].name}
+                label={charList[key].name}
                 iValue={value}
                 func={lutInputChange.bind(null,['lutList',newItem,'charList',key])}
                 type='number'
@@ -59,7 +56,7 @@ export default React.createClass({
                         {charArr}
                     </div>
                     <div className='clearfix'></div>
-                    <input type='submit' value = 'Сохранить'/>
+                    <input type='submit' value = 'Сохранить' onClick={saveToRemoteServer.bind(null,'REMOTE_LUT_ITEM',newItem,lutItem)}/>
                 </form>
             </div>
         )

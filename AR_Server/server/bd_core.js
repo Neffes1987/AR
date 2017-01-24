@@ -69,6 +69,7 @@ export class dbc{
         }
     }
     insert(data,colName,options){
+        const _this = this;
         const collection = _this.dbHandle.collection(colName);
         const callback = _this.callback;
         collection.insertMany(data,options,function(err, r) {
@@ -85,12 +86,13 @@ export class dbc{
             //$push - добавления элемента в массив
             //$inc - инкремент(>0),декремент(<0) параметра
             //Если параметр пустой то перезапись всего поля
+        const _this = this;
         let replacement = {}
         if(param) replacement = {[param]:data}
         else replacement = data
         const collection = _this.dbHandle.collection(colName);
         const callback = _this.callback;
-        collection.updateMany(source,replacement,{upsert:true,w:1},function(err, r) {
+        collection.updateOne(source,replacement,{upsert:true,w:1},function(err, r) {
             if (err){
                 console.log(err);
                 callback(err)

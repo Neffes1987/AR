@@ -14,7 +14,6 @@ let initialState = Map({
 
 function Char(state = initialState, action) {
     let clone={};
-    let charList;
     switch (action.type) {
         case 'CHAR_INPUT_CHANGE': return insertInMap(state,action.path,action.value);
         case 'CHAR_ARRAY_CHANGE': return insertInList(state,action.path,action.act,action.value);

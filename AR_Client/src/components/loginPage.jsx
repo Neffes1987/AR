@@ -26,7 +26,7 @@ export const logIn_view = React.createClass({
                     <Panel title={!restore?'Авторизация':'Восстановление пароля'}>
                         <ItemGroup label={!restore?'Логин':'Введите емаил'} iValue={!restore?login:email} func={SingInChange.bind(null,['data',!restore?'login':'email'])}/>
                         {!restore?<ItemGroup label='Пароль' type='password' iValue={password} func={SingInChange.bind(null,['data','password'])}/>:''}
-                        <input type='button' value='OK' onClick={Autorization.bind(null,login,password,'remote')}/>
+                        <input type='button' value='OK' onClick={Autorization.bind(null,login,password)}/>
                         <input type='button' value={!restore?'Восстановить пароль':'Отмена'} onClick={SingInChange.bind(null,['restore'],!restore?'1':'')}/>
                     </Panel>
                     <Alert alert={this.props.alert} AlertChange={AlertChange}/>

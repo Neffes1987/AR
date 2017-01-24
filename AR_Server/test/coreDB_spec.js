@@ -1,18 +1,16 @@
 import {assert} from 'chai'
-import {db_init,db_insert,getRows} from '../server/bd_core'
-function eachRow(){}
-function getlist(err,list){
-	if(err)throw err;
-	assert(list==={user:'1111'},'Где-то косяк!');
-}
-
+import {dbc} from '../server/bd_core'
 describe('Тестируем БД',()=>{
-			it('Создаем домен в бд ТЕСТ',()=>{
-				var db=db_init('test');
-				const data={user:'dddd'};
-				const key = db_insert(db,'users',data);
-				const users = getRows(db,'users',eachRow, getlist);
-			});
-});
-
-
+    it('Обновляем данные в бд',()=>{
+        const dbName='local';
+        const url = 'mongodb://root:1111@localhost:27017/admin';
+        const callback = (db)=>{
+            db.callback = (err)=>{
+                assert(err != 'success', err)
+            }
+            db.update({id:1},'lutList',{id:54},'$set')
+        };
+        let DBClass = new dbc(callback,url,dbName)
+        DBClass.connect();
+    });
+})
